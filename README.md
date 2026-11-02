@@ -22,7 +22,7 @@ see it.
 Paste this into Claude:
 
 ```
-https://github.com/Jakeschincariol/instagram-agent-skill
+https://github.com/jordandonovan91-hue/instagram-agent-skill
 
 Install this skill, then confirm /ig-reel works.
 ```
@@ -30,14 +30,14 @@ Install this skill, then confirm /ig-reel works.
 Or do it yourself, in Claude Code:
 
 ```bash
-git clone https://github.com/Jakeschincariol/instagram-agent-skill.git
+git clone https://github.com/jordandonovan91-hue/instagram-agent-skill.git
 cp -r instagram-agent-skill/skills/ig-* ~/.claude/skills/
 ```
 
 Or as a plugin:
 
 ```
-/plugin marketplace add Jakeschincariol/instagram-agent-skill
+/plugin marketplace add jordandonovan91-hue/instagram-agent-skill
 /plugin install instagram-agent
 ```
 

@@ -29,6 +29,17 @@ import sys
 WORD_RE = re.compile(r"[A-Za-z0-9$%'’-]+")
 SENT_RE = re.compile(r"[^.!?]+[.!?]*")
 CONCRETE_RE = re.compile(r"\$\s?\d|\b\d[\d,.]*\b|(?<!^)\b[A-Z][a-z]{2,}\b", re.MULTILINE)
+# Scripts are spoken, so numbers are often written as words ("five hours").
+# Same list hookscore.py uses; "one" and "first" stay out because they are
+# usually filler.
+SPOKEN_NUMBER_RE = re.compile(
+    r"\b(?:zero|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|"
+    r"fifteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|"
+    r"thousand|million|billion|dozen|half|twice|triple)\b", re.IGNORECASE)
+
+
+def concrete_count(text):
+    return len(CONCRETE_RE.findall(text)) + len(SPOKEN_NUMBER_RE.findall(text))
 STOPWORDS = {
     "the", "a", "an", "and", "or", "but", "if", "of", "to", "in", "on", "for",
     "with", "that", "this", "it", "is", "are", "was", "were", "be", "been",
@@ -98,7 +109,7 @@ def analyse(raw, wpm=165, target=None):
             "dur": round(dur, 2),
             "words": n,
             "text": text,
-            "concrete": len(CONCRETE_RE.findall(text)),
+            "concrete": concrete_count(text),
             "label": "",
             "flags": [],
         })
