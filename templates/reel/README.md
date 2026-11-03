@@ -32,6 +32,10 @@ npm run render
 The clips are joined into `voiceover.wav` and every scene and caption is re-timed
 to the real audio. Needs `ffmpeg`.
 
+Every beat after the hook is held long enough for its on-screen text to be read
+(about 0.5s plus 0.3s a word, the floor `npm run check` uses). With a voiceover,
+that hold is added as a short pause after the line. The hook is never stretched.
+
 ## Visual types
 
 | type | what it shows | fields |
@@ -42,6 +46,7 @@ to the real audio. Needs `ffmpeg`.
 | `prompt` | a prompt typed into the chat | `text` |
 | `cards` | cards filed into a folder | `items`, `target` |
 | `shortcut` | a text shortcut expanding into a full reply | `trigger`, `text` |
+| `tiles` | numbered tiles, some highlighted | `items`, `active` (index, list or `"all"`) |
 | `cta` | save icon and handle | `text` |
 
 Mockups are generic on purpose. Use a tool's own screenshots only from its

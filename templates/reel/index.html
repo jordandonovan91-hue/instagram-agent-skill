@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1080, height=1920" />
-    <title>Stop retyping customer replies</title>
+    <title>You don&#x27;t need fifty AI tools</title>
     <script src="assets/gsap.min.js"></script>
     <style>
       @font-face { font-family: "InterReel"; font-weight: 500; src: url(assets/fonts/inter-latin-500-normal.woff2) format("woff2"); }
@@ -52,6 +52,11 @@
       .trig { position: absolute; color: var(--accent); font-weight: 700; }
       .send { margin-top: 40px; margin-left: auto; width: 200px; text-align: center; padding: 22px 0; border-radius: 40px; background: var(--teal);
         color: #052b26; font-size: 34px; font-weight: 800; }
+      .tile { position: absolute; left: 0; width: 100%; height: 170px; border-radius: 30px; background: var(--panel); border: 2px solid var(--line);
+        display: flex; align-items: center; gap: 30px; padding: 0 40px; font-size: 54px; font-weight: 800; color: var(--muted); }
+      .tile i { font-style: normal; width: 90px; height: 90px; border-radius: 50%; display: grid; place-items: center; background: var(--ground); font-size: 46px; }
+      .tile.on { background: var(--accent); border-color: var(--accent); color: var(--ground); }
+      .tile.on i { color: var(--accent); }
       .bm { color: var(--accent); }
       .handle { font-size: 54px; font-weight: 800; }
       .cap { position: absolute; left: 70px; width: 780px; bottom: calc(1920px - 1440px + 10px); }
@@ -60,79 +65,68 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="31.827" data-width="1080" data-height="1920">
-      <div class="clip scene" id="s0" data-start="0.0" data-duration="2.795" data-track-index="1"><div class="card">STOP RETYPING REPLIES</div><div class="vis" id="s0-v"><div class="stack"><div class="bubble out rep" style="top:0px">Hi! Thanks for reaching out. We&#x27;re open 9 to 5...</div><div class="bubble out rep" style="top:120px">Hi! Thanks for reaching out. We&#x27;re open 9 to 5...</div><div class="bubble out rep" style="top:240px">Hi! Thanks for reaching out. We&#x27;re open 9 to 5...</div><div class="bubble out rep" style="top:360px">Hi! Thanks for reaching out. We&#x27;re open 9 to 5...</div></div><div class="strike"></div><div class="count">x4 today</div></div></div>
-      <div class="clip scene" id="s1" data-start="2.795" data-duration="3.523" data-track-index="1"><div class="card">SAME 10 QUESTIONS</div><div class="vis" id="s1-v"><div class="stack"><div class="bubble in b0" style="top:0px;left:0px">Are you open Sunday?</div><div class="bubble in b1" style="top:112px;left:70px">Do you deliver?</div><div class="bubble in b2" style="top:224px;left:0px">How much is it?</div><div class="bubble in b3" style="top:336px;left:70px">Are you open Sunday?</div><div class="bubble in b4" style="top:448px;left:0px">Can I book online?</div><div class="bubble in b5" style="top:560px;left:70px">Do you deliver?</div></div></div></div>
-      <div class="clip scene" id="s2" data-start="6.318" data-duration="3.159" data-track-index="1"><div class="card">OPEN ANY AI CHAT</div><div class="vis" id="s2-v"><div class="win"><div class="win-bar"><span></span><span></span><span></span><b>ChatGPT  ·  Claude  ·  Gemini</b></div><div class="win-body"></div><div class="win-input"><i class="caret"></i>Message</div></div></div></div>
-      <div class="clip scene" id="s3" data-start="9.477" data-duration="2.795" data-track-index="1"><div class="card">PASTE YOUR 10 QUESTIONS</div><div class="vis" id="s3-v"><div class="win"><div class="win-bar"><span></span><span></span><span></span><b>Your AI chat</b></div><div class="win-body"><div class="cl">1. Are you open Sunday?</div><div class="cl">2. Do you deliver?</div><div class="cl">3. How much is a consult?</div><div class="cl">4. Can I book online?</div><div class="cl">...</div></div><div class="win-input"><i class="caret"></i>Message</div></div></div></div>
-      <div class="clip scene" id="s4" data-start="12.273" data-duration="3.159" data-track-index="1"><div class="card">ADD YOUR ANSWERS</div><div class="vis" id="s4-v"><div class="win"><div class="win-bar"><span></span><span></span><span></span><b>Your AI chat</b></div><div class="win-body"><div class="cl">1. open sun? -&gt; no, closed sundays</div><div class="cl">2. deliver? -&gt; yes within 5 mi</div><div class="cl">3. consult -&gt; $40, free if u buy</div><div class="cl">4. book -&gt; link on site</div></div><div class="win-input"><i class="caret"></i>Message</div></div></div></div>
-      <div class="clip scene" id="s5" data-start="15.432" data-duration="3.159" data-track-index="1"><div class="card">SHORT + FRIENDLY</div><div class="vis" id="s5-v"><div class="win"><div class="win-bar"><span></span><span></span><span></span><b>Your AI chat</b></div><div class="win-body"><div class="bubble out pr">Write a short, friendly reply to each question.</div><div class="dots"><i></i><i></i><i></i></div></div></div></div></div>
-      <div class="clip scene" id="s6" data-start="18.591" data-duration="2.432" data-track-index="1"><div class="card">IN YOUR TONE</div><div class="vis" id="s6-v"><div class="win"><div class="win-bar"><span></span><span></span><span></span><b>Your AI chat</b></div><div class="win-body"><div class="bubble out pr">Match my tone: warm, casual, no jargon.</div><div class="dots"><i></i><i></i><i></i></div></div></div></div></div>
-      <div class="clip scene" id="s7" data-start="21.023" data-duration="3.159" data-track-index="1"><div class="card">SAVE AS TEMPLATES</div><div class="vis" id="s7-v"><div class="stack"><div class="tcard c0" style="top:0px">Sunday hours</div><div class="tcard c1" style="top:118px">Delivery</div><div class="tcard c2" style="top:236px">Consult price</div><div class="tcard c3" style="top:354px">Booking link</div></div><div class="folder"><div class="tab"></div><b>Templates</b></div></div></div>
-      <div class="clip scene" id="s8" data-start="24.182" data-duration="3.886" data-track-index="1"><div class="card">2 TAPS. DONE.</div><div class="vis" id="s8-v"><div class="phone"><div class="field"><span class="trig">;hours</span><span class="full">Hi! We&#x27;re closed Sundays, but open 9 to 5 Monday to Saturday. See you soon!</span></div><div class="send">Send</div></div></div></div>
-      <div class="clip scene" id="s9" data-start="28.068" data-duration="3.759" data-track-index="1"><div class="card">SAVE THIS</div><div class="vis center" id="s9-v"><div class="bm"><svg viewBox="0 0 24 24" width="300" height="300"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z" fill="currentColor"/></svg></div><div class="handle">@small_bizaitools</div></div></div>
-      <div class="clip cap" id="c0" data-start="0.0" data-duration="2.795" data-track-index="2"><p><span class="w">Stop</span> <span class="w">retyping</span> <span class="w">customer</span> <span class="w">replies.</span> <span class="w">Save</span> <span class="w">them</span> <span class="w">once.</span></p></div>
-      <div class="clip cap" id="c1" data-start="2.795" data-duration="3.523" data-track-index="2"><p><span class="w">Your</span> <span class="w">customers</span> <span class="w">ask</span> <span class="w">the</span> <span class="w">same</span> <span class="w">ten</span> <span class="w">questions</span> <span class="w">on</span> <span class="w">repeat.</span></p></div>
-      <div class="clip cap" id="c2" data-start="6.318" data-duration="3.159" data-track-index="2"><p><span class="w">Open</span> <span class="w">any</span> <span class="w">AI</span> <span class="w">chat,</span> <span class="w">like</span> <span class="w">ChatGPT</span> <span class="w">or</span> <span class="w">Claude.</span></p></div>
-      <div class="clip cap" id="c3" data-start="9.477" data-duration="2.795" data-track-index="2"><p><span class="w">Paste</span> <span class="w">in</span> <span class="w">your</span> <span class="w">ten</span> <span class="w">most</span> <span class="w">common</span> <span class="w">questions.</span></p></div>
-      <div class="clip cap" id="c4" data-start="12.273" data-duration="3.159" data-track-index="2"><p><span class="w">Add</span> <span class="w">how</span> <span class="w">you&#x27;d</span> <span class="w">normally</span> <span class="w">answer.</span> <span class="w">Messy</span> <span class="w">is</span> <span class="w">fine.</span></p></div>
-      <div class="clip cap" id="c5" data-start="15.432" data-duration="3.159" data-track-index="2"><p><span class="w">Ask</span> <span class="w">for</span> <span class="w">a</span> <span class="w">short,</span> <span class="w">friendly</span> <span class="w">reply</span> <span class="w">to</span> <span class="w">each.</span></p></div>
-      <div class="clip cap" id="c6" data-start="18.591" data-duration="2.432" data-track-index="2"><p><span class="w">Tell</span> <span class="w">it</span> <span class="w">to</span> <span class="w">match</span> <span class="w">your</span> <span class="w">tone.</span></p></div>
-      <div class="clip cap" id="c7" data-start="21.023" data-duration="3.159" data-track-index="2"><p><span class="w">Save</span> <span class="w">them</span> <span class="w">as</span> <span class="w">Gmail</span> <span class="w">templates</span> <span class="w">or</span> <span class="w">text</span> <span class="w">shortcuts.</span></p></div>
-      <div class="clip cap" id="c8" data-start="24.182" data-duration="3.886" data-track-index="2"><p><span class="w">Next</span> <span class="w">time,</span> <span class="w">it&#x27;s</span> <span class="w">two</span> <span class="w">taps</span> <span class="w">instead</span> <span class="w">of</span> <span class="w">a</span> <span class="w">blank</span> <span class="w">screen.</span></p></div>
-      <div class="clip cap" id="c9" data-start="28.068" data-duration="3.759" data-track-index="2"><p><span class="w">Save</span> <span class="w">this,</span> <span class="w">and</span> <span class="w">stop</span> <span class="w">retyping</span> <span class="w">the</span> <span class="w">same</span> <span class="w">reply.</span></p></div>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="30.85" data-width="1080" data-height="1920">
+      <div class="clip scene" id="s0" data-start="0.0" data-duration="2.795" data-track-index="1"><div class="card">SMALL BIZ? YOU NEED 3</div><div class="vis" id="s0-v"><div class="stack"><div class="bubble in b0" style="top:0px;left:0px">New AI app!</div><div class="bubble in b1" style="top:112px;left:70px">50 AI tools</div><div class="bubble in b2" style="top:224px;left:0px">AI app #37</div><div class="bubble in b3" style="top:336px;left:70px">Try this one</div><div class="bubble in b4" style="top:448px;left:0px">Another AI tool</div></div></div></div>
+      <div class="clip scene" id="s1" data-start="2.795" data-duration="4.25" data-track-index="1"><div class="card">1. WRITE</div><div class="vis" id="s1-v"><div class="stack"><div class="tile on" style="top:0px"><i>1</i>Write</div><div class="tile" style="top:200px"><i>2</i>Notes</div><div class="tile" style="top:400px"><i>3</i>Automate</div></div></div></div>
+      <div class="clip scene" id="s2" data-start="7.045" data-duration="3.159" data-track-index="1"><div class="card">2. NOTES</div><div class="vis" id="s2-v"><div class="stack"><div class="tile" style="top:0px"><i>1</i>Write</div><div class="tile on" style="top:200px"><i>2</i>Notes</div><div class="tile" style="top:400px"><i>3</i>Automate</div></div></div></div>
+      <div class="clip scene" id="s3" data-start="10.205" data-duration="3.159" data-track-index="1"><div class="card">3. AUTOMATE</div><div class="vis" id="s3-v"><div class="stack"><div class="tile" style="top:0px"><i>1</i>Write</div><div class="tile" style="top:200px"><i>2</i>Notes</div><div class="tile on" style="top:400px"><i>3</i>Automate</div></div></div></div>
+      <div class="clip scene" id="s4" data-start="13.364" data-duration="2.432" data-track-index="1"><div class="card">THE REST IS NOISE</div><div class="vis" id="s4-v"><div class="stack"><div class="tile on" style="top:0px"><i>1</i>Write</div><div class="tile on" style="top:200px"><i>2</i>Notes</div><div class="tile on" style="top:400px"><i>3</i>Automate</div></div></div></div>
+      <div class="clip scene" id="s5" data-start="15.795" data-duration="3.886" data-track-index="1"><div class="card">1 TOOL A WEEK</div><div class="vis" id="s5-v"><div class="win"><div class="win-bar"><span></span><span></span><span></span><b>Your AI chat</b></div><div class="win-body"><div class="bubble out pr">This week: one tool, in plain English.</div><div class="dots"><i></i><i></i><i></i></div></div></div></div></div>
+      <div class="clip scene" id="s6" data-start="19.682" data-duration="3.886" data-track-index="1"><div class="card">DOES. COSTS. FOR WHO.</div><div class="vis" id="s6-v"><div class="stack"><div class="tcard c0" style="top:0px">What it does</div><div class="tcard c1" style="top:118px">What it costs</div><div class="tcard c2" style="top:236px">Who it&#x27;s for</div></div><div class="folder"><div class="tab"></div><b>Under 1 min</b></div></div></div>
+      <div class="clip scene" id="s7" data-start="23.568" data-duration="3.159" data-track-index="1"><div class="card">NO HYPE</div><div class="vis" id="s7-v"><div class="stack"><div class="tile on" style="top:0px"><i>1</i>No jargon</div><div class="tile on" style="top:200px"><i>2</i>No hype</div><div class="tile on" style="top:400px"><i>3</i>Under 60 sec</div></div></div></div>
+      <div class="clip scene" id="s8" data-start="26.727" data-duration="4.123" data-track-index="1"><div class="card">FOLLOW FOR MORE</div><div class="vis center" id="s8-v"><div class="bm"><svg viewBox="0 0 24 24" width="300" height="300"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z" fill="currentColor"/></svg></div><div class="handle">@small_bizaitools</div></div></div>
+      <div class="clip cap" id="c0" data-start="0.0" data-duration="2.795" data-track-index="2"><p><span class="w">You</span> <span class="w">need</span> <span class="w">three</span> <span class="w">AI</span> <span class="w">tools.</span> <span class="w">Not</span> <span class="w">fifty.</span></p></div>
+      <div class="clip cap" id="c1" data-start="2.795" data-duration="4.25" data-track-index="2"><p><span class="w">One</span> <span class="w">to</span> <span class="w">write</span> <span class="w">emails,</span> <span class="w">posts</span> <span class="w">and</span> <span class="w">quotes,</span> <span class="w">like</span> <span class="w">ChatGPT</span> <span class="w">or</span> <span class="w">Claude.</span></p></div>
+      <div class="clip cap" id="c2" data-start="7.045" data-duration="3.159" data-track-index="2"><p><span class="w">One</span> <span class="w">for</span> <span class="w">meeting</span> <span class="w">notes,</span> <span class="w">like</span> <span class="w">Otter</span> <span class="w">or</span> <span class="w">Fireflies.</span></p></div>
+      <div class="clip cap" id="c3" data-start="10.205" data-duration="3.159" data-track-index="2"><p><span class="w">And</span> <span class="w">one</span> <span class="w">to</span> <span class="w">automate</span> <span class="w">repeat</span> <span class="w">tasks,</span> <span class="w">like</span> <span class="w">Zapier.</span></p></div>
+      <div class="clip cap" id="c4" data-start="13.364" data-duration="2.432" data-track-index="2"><p><span class="w">That&#x27;s</span> <span class="w">it.</span> <span class="w">Everything</span> <span class="w">else</span> <span class="w">is</span> <span class="w">noise.</span></p></div>
+      <div class="clip cap" id="c5" data-start="15.795" data-duration="3.886" data-track-index="2"><p><span class="w">Every</span> <span class="w">week,</span> <span class="w">I</span> <span class="w">break</span> <span class="w">down</span> <span class="w">one</span> <span class="w">tool</span> <span class="w">in</span> <span class="w">plain</span> <span class="w">English.</span></p></div>
+      <div class="clip cap" id="c6" data-start="19.682" data-duration="3.886" data-track-index="2"><p><span class="w">What</span> <span class="w">it</span> <span class="w">does,</span> <span class="w">what</span> <span class="w">it</span> <span class="w">costs,</span> <span class="w">and</span> <span class="w">who</span> <span class="w">it&#x27;s</span> <span class="w">for.</span></p></div>
+      <div class="clip cap" id="c7" data-start="23.568" data-duration="3.159" data-track-index="2"><p><span class="w">No</span> <span class="w">jargon,</span> <span class="w">no</span> <span class="w">hype,</span> <span class="w">and</span> <span class="w">under</span> <span class="w">a</span> <span class="w">minute.</span></p></div>
+      <div class="clip cap" id="c8" data-start="26.727" data-duration="4.123" data-track-index="2"><p><span class="w">Follow</span> <span class="w">for</span> <span class="w">the</span> <span class="w">next</span> <span class="w">one.</span> <span class="w">You</span> <span class="w">only</span> <span class="w">need</span> <span class="w">three.</span></p></div>
       
     </div>
     <script>
       window.__timelines = window.__timelines || {};
       const tl = gsap.timeline({ paused: true });
       tl.from("#s0 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 0.0);
-      tl.from("#s0-v .rep", {y: 60, opacity: 0, duration: 0.25, stagger: 0.18, ease: "power3.out"}, 0.05);
-      tl.fromTo("#s0-v .strike", {scaleX: 0}, {scaleX: 1, duration: 0.3, ease: "power2.inOut"}, 0.95);
-      tl.from("#s0-v .count", {scale: 0.4, opacity: 0, duration: 0.3, ease: "back.out(2)"}, 1.15);
+      tl.from("#s0-v .bubble", {x: -40, opacity: 0, duration: 0.22, stagger: 0.400, ease: "power3.out"}, 0.05);
       tl.to("#c0 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.378}, 0.0);
       tl.from("#s1 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 2.795);
-      tl.from("#s1-v .bubble", {x: -40, opacity: 0, duration: 0.22, stagger: 0.400, ease: "power3.out"}, 2.8449999999999998);
-      tl.to("#c1 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.375}, 2.795);
-      tl.from("#s2 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 6.318);
-      tl.from("#s2-v .win", {y: 40, opacity: 0, scale: 0.96, duration: 0.3, ease: "power3.out"}, 6.337999999999999);
-      tl.fromTo("#s2-v .caret", {opacity: 1}, {opacity: 0, duration: 0.4, repeat: 3, yoyo: true, ease: "steps(1)"}, 6.617999999999999);
-      tl.to("#c2 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.376}, 6.318);
-      tl.from("#s3 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 9.477);
-      tl.from("#s3-v .win", {y: 40, opacity: 0, scale: 0.96, duration: 0.3, ease: "power3.out"}, 9.497);
-      tl.fromTo("#s3-v .cl", {clipPath: "inset(0 100% 0 0)"}, {clipPath: "inset(0 0% 0 0)", duration: 0.377, stagger: 0.419, ease: "steps(18)"}, 9.827);
-      tl.to("#c3 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.378}, 9.477);
-      tl.from("#s4 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 12.273);
-      tl.from("#s4-v .win", {y: 40, opacity: 0, scale: 0.96, duration: 0.3, ease: "power3.out"}, 12.293);
-      tl.fromTo("#s4-v .cl", {clipPath: "inset(0 100% 0 0)"}, {clipPath: "inset(0 0% 0 0)", duration: 0.405, stagger: 0.450, ease: "steps(18)"}, 12.623);
-      tl.to("#c4 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.376}, 12.273);
-      tl.from("#s5 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 15.432);
-      tl.from("#s5-v .win", {opacity: 0, duration: 0.2}, 15.432);
-      tl.fromTo("#s5-v .pr", {clipPath: "inset(0 100% 0 0)"}, {clipPath: "inset(0 0% 0 0)", duration: 1.000, ease: "steps(24)"}, 15.582);
-      tl.from("#s5-v .dots i", {y: 0, opacity: 0, duration: 0.2, stagger: 0.12}, 16.732);
-      tl.to("#c5 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.376}, 15.432);
-      tl.from("#s6 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 18.591);
-      tl.from("#s6-v .win", {opacity: 0, duration: 0.2}, 18.591);
-      tl.fromTo("#s6-v .pr", {clipPath: "inset(0 100% 0 0)"}, {clipPath: "inset(0 0% 0 0)", duration: 1.000, ease: "steps(24)"}, 18.741);
-      tl.from("#s6-v .dots i", {y: 0, opacity: 0, duration: 0.2, stagger: 0.12}, 19.891);
-      tl.to("#c6 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.380}, 18.591);
-      tl.from("#s7 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 21.023);
-      tl.from("#s7-v .tcard", {x: 60, opacity: 0, duration: 0.22, stagger: 0.15, ease: "power3.out"}, 21.073);
-      tl.from("#s7-v .folder", {y: 80, opacity: 0, duration: 0.3, ease: "power3.out"}, 21.523);
-      tl.to("#s7-v .tcard", {y: 520, x: 200, scale: 0.3, opacity: 0, duration: 0.35, stagger: 0.12, ease: "power2.in"}, 22.982);
-      tl.to("#c7 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.376}, 21.023);
-      tl.from("#s8 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 24.182);
-      tl.from("#s8-v .phone", {y: 60, opacity: 0, duration: 0.3, ease: "power3.out"}, 24.182);
-      tl.fromTo("#s8-v .trig", {clipPath: "inset(0 100% 0 0)"}, {clipPath: "inset(0 0% 0 0)", duration: 0.5, ease: "steps(6)"}, 24.482);
-      tl.to("#s8-v .trig", {opacity: 0, duration: 0.1}, 25.182);
-      tl.fromTo("#s8-v .full", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.25, ease: "power2.out"}, 25.232);
-      tl.fromTo("#s8-v .send", {scale: 1}, {scale: 1.12, duration: 0.15, yoyo: true, repeat: 1}, 26.382);
-      tl.to("#c8 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.374}, 24.182);
-      tl.from("#s9 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 28.068);
-      tl.from("#s9-v .bm", {scale: 0.3, opacity: 0, duration: 0.4, ease: "back.out(2.2)"}, 28.118000000000002);
-      tl.to("#s9-v .bm", {scale: 1.08, duration: 0.3, yoyo: true, repeat: 3, ease: "sine.inOut"}, 28.668000000000003);
-      tl.from("#s9-v .handle", {y: 30, opacity: 0, duration: 0.3}, 28.568);
-      tl.to("#c9 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.376}, 28.068);
+      tl.from("#s1-v .tile", {x: -30, opacity: 0, duration: 0.2, stagger: 0.08, ease: "power3.out"}, 2.815);
+      tl.fromTo("#s1-v .tile.on", {scale: 1}, {scale: 1.04, duration: 0.18, yoyo: true, repeat: 1, ease: "sine.inOut"}, 3.145);
+      tl.to("#c1 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.373}, 2.795);
+      tl.from("#s2 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 7.045);
+      tl.from("#s2-v .tile", {x: -30, opacity: 0, duration: 0.2, stagger: 0.08, ease: "power3.out"}, 7.0649999999999995);
+      tl.fromTo("#s2-v .tile.on", {scale: 1}, {scale: 1.04, duration: 0.18, yoyo: true, repeat: 1, ease: "sine.inOut"}, 7.395);
+      tl.to("#c2 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.376}, 7.045);
+      tl.from("#s3 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 10.205);
+      tl.from("#s3-v .tile", {x: -30, opacity: 0, duration: 0.2, stagger: 0.08, ease: "power3.out"}, 10.225);
+      tl.fromTo("#s3-v .tile.on", {scale: 1}, {scale: 1.04, duration: 0.18, yoyo: true, repeat: 1, ease: "sine.inOut"}, 10.555);
+      tl.to("#c3 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.376}, 10.205);
+      tl.from("#s4 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 13.364);
+      tl.from("#s4-v .tile", {x: -30, opacity: 0, duration: 0.2, stagger: 0.08, ease: "power3.out"}, 13.384);
+      tl.fromTo("#s4-v .tile.on", {scale: 1}, {scale: 1.04, duration: 0.18, yoyo: true, repeat: 1, ease: "sine.inOut"}, 13.714);
+      tl.to("#c4 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.380}, 13.364);
+      tl.from("#s5 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 15.795);
+      tl.from("#s5-v .win", {opacity: 0, duration: 0.2}, 15.795);
+      tl.fromTo("#s5-v .pr", {clipPath: "inset(0 100% 0 0)"}, {clipPath: "inset(0 0% 0 0)", duration: 1.000, ease: "steps(24)"}, 15.945);
+      tl.from("#s5-v .dots i", {y: 0, opacity: 0, duration: 0.2, stagger: 0.12}, 17.095);
+      tl.to("#c5 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.374}, 15.795);
+      tl.from("#s6 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 19.682);
+      tl.from("#s6-v .tcard", {x: 60, opacity: 0, duration: 0.22, stagger: 0.15, ease: "power3.out"}, 19.732);
+      tl.from("#s6-v .folder", {y: 80, opacity: 0, duration: 0.3, ease: "power3.out"}, 20.182);
+      tl.to("#s6-v .tcard", {y: 520, x: 200, scale: 0.3, opacity: 0, duration: 0.35, stagger: 0.12, ease: "power2.in"}, 22.368);
+      tl.to("#c6 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.374}, 19.682);
+      tl.from("#s7 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 23.568);
+      tl.from("#s7-v .tile", {x: -30, opacity: 0, duration: 0.2, stagger: 0.08, ease: "power3.out"}, 23.588);
+      tl.fromTo("#s7-v .tile.on", {scale: 1}, {scale: 1.04, duration: 0.18, yoyo: true, repeat: 1, ease: "sine.inOut"}, 23.918000000000003);
+      tl.to("#c7 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.376}, 23.568);
+      tl.from("#s8 .card", {y: -24, opacity: 0, duration: 0.2, ease: "power3.out"}, 26.727);
+      tl.from("#s8-v .bm", {scale: 0.3, opacity: 0, duration: 0.4, ease: "back.out(2.2)"}, 26.777);
+      tl.to("#s8-v .bm", {scale: 1.08, duration: 0.3, yoyo: true, repeat: 3, ease: "sine.inOut"}, 27.327);
+      tl.from("#s8-v .handle", {y: 30, opacity: 0, duration: 0.3}, 27.227);
+      tl.to("#c8 .w", {color: "var(--accent)", duration: 0.05, stagger: 0.375}, 26.727);
       window.__timelines["main"] = tl;
       tl.seek(0);
     </script>

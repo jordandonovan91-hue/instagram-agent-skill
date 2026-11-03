@@ -30,6 +30,29 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+def nwords(s):
+    return len(str(s).split())
+
+
+def read_need(v):
+    """Seconds a beat must last so its visual's text stays up long enough to read
+    (HyperFrames' floor: 0.5s + 0.3s a word after the line has appeared)."""
+    k = v["type"]
+    if k == "chat" and v.get("lines"):
+        return max(0.35 + i * 0.45 + 0.4 + 0.5 + 0.3 * nwords(x) for i, x in enumerate(v["lines"]))
+    if k == "prompt":
+        return 1.15 + 0.5 + 0.3 * nwords(v["text"])
+    if k == "shortcut":
+        return 1.3 + 0.5 + 0.3 * nwords(v["text"])
+    if k == "bubbles":
+        return 0.05 + (len(v["items"]) - 1) * 0.4 + 0.22 + 0.5 + 0.3 * max(nwords(x) for x in v["items"])
+    if k == "tiles":
+        return 0.02 + 0.08 * (len(v["items"]) - 1) + 0.2 + 0.5 + 0.3 * max(nwords(x) for x in v["items"])
+    if k == "cards":
+        return 1.2 + 0.72 + 0.5 + 0.3 * max(nwords(x) for x in v["items"])
+    return 0.0  # repeat (hook) and cta: never stretch the hook
+
+
 def beat_times(reel, timings):
     if timings:
         if len(timings) != len(reel["beats"]):
@@ -44,7 +67,7 @@ def beat_times(reel, timings):
     out, t = [], 0.0
     for b in reel["beats"]:
         words = len(re.findall(r"[\w$']+", b["say"]))
-        d = max(1.8, words / wpm * 60 + 0.25)
+        d = max(1.8, words / wpm * 60 + 0.25, read_need(b["visual"]) if out else 0)
         out.append((round(t, 3), round(d, 3)))
         t += d
     s, d = out[-1]
@@ -143,6 +166,22 @@ def v_shortcut(v, sel, t, d):
     return h, js
 
 
+def v_tiles(v, sel, t, d):
+    items = v["items"]
+    act = v.get("active", "all")
+    act = set(range(len(items))) if act == "all" else set(act if isinstance(act, list) else [act])
+    tiles = "".join(
+        f'<div class="tile{" on" if i in act else ""}" style="top:{i*200}px"><i>{i+1}</i>{esc(x)}</div>'
+        for i, x in enumerate(items)
+    )
+    h = f'<div class="vis" id="{sel}-v"><div class="stack">{tiles}</div></div>'
+    js = [
+        f'tl.from("#{sel}-v .tile", {{x: -30, opacity: 0, duration: 0.2, stagger: 0.08, ease: "power3.out"}}, {t + 0.02});',
+        f'tl.fromTo("#{sel}-v .tile.on", {{scale: 1}}, {{scale: 1.04, duration: 0.18, yoyo: true, repeat: 1, ease: "sine.inOut"}}, {t + 0.35});',
+    ]
+    return h, js
+
+
 BOOKMARK = '<svg viewBox="0 0 24 24" width="300" height="300"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z" fill="currentColor"/></svg>'
 
 
@@ -157,7 +196,7 @@ def v_cta(v, sel, t, d):
 
 
 VISUALS = {"repeat": v_repeat, "bubbles": v_bubbles, "chat": v_chat, "prompt": v_prompt,
-           "cards": v_cards, "shortcut": v_shortcut, "cta": v_cta}
+           "cards": v_cards, "shortcut": v_shortcut, "tiles": v_tiles, "cta": v_cta}
 
 
 def build(reel, timings=None, audio=None):
@@ -245,6 +284,11 @@ TEMPLATE = """<!doctype html>
       .trig {{ position: absolute; color: var(--accent); font-weight: 700; }}
       .send {{ margin-top: 40px; margin-left: auto; width: 200px; text-align: center; padding: 22px 0; border-radius: 40px; background: var(--teal);
         color: #052b26; font-size: 34px; font-weight: 800; }}
+      .tile {{ position: absolute; left: 0; width: 100%; height: 170px; border-radius: 30px; background: var(--panel); border: 2px solid var(--line);
+        display: flex; align-items: center; gap: 30px; padding: 0 40px; font-size: 54px; font-weight: 800; color: var(--muted); }}
+      .tile i {{ font-style: normal; width: 90px; height: 90px; border-radius: 50%; display: grid; place-items: center; background: var(--ground); font-size: 46px; }}
+      .tile.on {{ background: var(--accent); border-color: var(--accent); color: var(--ground); }}
+      .tile.on i {{ color: var(--accent); }}
       .bm {{ color: var(--accent); }}
       .handle {{ font-size: 54px; font-weight: 800; }}
       .cap {{ position: absolute; left: {left}px; width: {col_w}px; bottom: calc(1920px - {safe_bottom}px + 10px); }}
@@ -273,21 +317,25 @@ TEMPLATE = """<!doctype html>
 GAP = 0.15  # silence between beats when stitching per-beat voiceover clips
 
 
-def stitch_vo(vo_dir, n, here):
-    """Join vo/01.wav .. vo/NN.wav (one clip per beat) into voiceover.wav and return timings."""
+def stitch_vo(vo_dir, beats, here):
+    """Join vo/01.wav .. vo/NN.wav (one clip per beat) into voiceover.wav and return timings.
+    Each beat gets at least GAP of silence after it, more if its visual needs time to be read."""
+    n = len(beats)
     clips = sorted(p for p in Path(vo_dir).iterdir() if p.suffix.lower() in (".wav", ".mp3", ".m4a"))
     if len(clips) != n:
         raise SystemExit(f"{vo_dir} has {len(clips)} audio clips, reel has {n} beats (name them 01.wav, 02.wav, ...)")
-    timings, t = [], 0.0
-    for c in clips:
+    timings, pads, t = [], [], 0.0
+    for c, b in zip(clips, beats):
         dur = float(subprocess.check_output(
             ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(c)], text=True))
+        pad = max(GAP, (read_need(b["visual"]) if timings else 0) - dur)
         timings.append({"start": round(t, 3), "end": round(t + dur, 3)})
-        t += dur + GAP
+        pads.append(pad)
+        t += dur + pad
     inputs, filters = [], []
     for i, c in enumerate(clips):
         inputs += ["-i", str(c)]
-        filters.append(f"[{i}:a]aresample=44100,apad=pad_dur={GAP}[a{i}]")
+        filters.append(f"[{i}:a]aresample=44100,apad=pad_dur={pads[i]:.3f}[a{i}]")
     graph = ";".join(filters) + ";" + "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1[out]"
     subprocess.run(["ffmpeg", "-v", "error", "-y", *inputs, "-filter_complex", graph, "-map", "[out]",
                     str(here / "voiceover.wav")], check=True)
@@ -305,7 +353,7 @@ def main():
     reel = json.loads(a.reel.read_text())
     timings = json.loads(a.timings.read_text()) if a.timings else None
     if a.vo_dir:
-        timings = stitch_vo(a.vo_dir, len(reel["beats"]), a.out.parent)
+        timings = stitch_vo(a.vo_dir, reel["beats"], a.out.parent)
         a.audio = "voiceover.wav"
     a.out.write_text(build(reel, timings, a.audio))
     times = beat_times(reel, timings)
