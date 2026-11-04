@@ -1,6 +1,6 @@
 # The Instagram agent skill
 
-Thirteen Claude skills that run an Instagram account. Free, MIT, no signup, no
+Fourteen Claude skills that run an Instagram account. Free, MIT, no signup, no
 API key, nothing to connect.
 
 One of them writes your Reels off 26 hook formulas and scores the hook before
@@ -43,7 +43,7 @@ Or as a plugin:
 
 Project-local instead of global: copy the same folders into your repo's
 `.claude/skills/`. No Claude Code at all? Paste any single `SKILL.md` at the top
-of a chat and it runs as a mode. You lose the five Python tools, which is most
+of a chat and it runs as a mode. You lose the six Python tools, which is most
 of the point of `/ig-reel` and `/ig-human`, but the rest works.
 
 Then spend ten minutes on `templates/voice.md`. Copy it to
@@ -52,7 +52,7 @@ reels and say "write my voice.md from these". Every skill reads that file. It
 matters more here than on other platforms, because you have to say the words
 out loud.
 
-## The thirteen
+## The fourteen
 
 | command | what it does |
 | --- | --- |
@@ -63,6 +63,7 @@ out loud.
 | `/ig-story` | The daily story sequence, which sticker does which job, and the DM funnel that starts with them moving first. |
 | `/ig-profile` | Scores your profile against a [12-part rubric](skills/ig-profile/rubric.json) out of 100, then rewrites in fix-first order. |
 | `/ig-plan` | The week. What to post, which format, when, and the 10 accounts to engage with. |
+| `/ig-schedule` | The plan onto dated slots in your audience's timezone. Checks the queue, writes a pack per post and a calendar file of reminders. You load it into Instagram's own scheduler. |
 | `/ig-human` | The humanizer. Two scripts that actually run. See below. |
 | `/ig-comment` | Comments on other people's posts. Nine types, picked by what the post actually is. Never "🔥🔥🔥". |
 | `/ig-reply` | The thread under your own post. Sorts into keyword / lead / substance / question / support / noise, then writes in that order. |
@@ -70,7 +71,7 @@ out loud.
 | `/ig-repurpose` | One video, podcast or newsletter into a week of reels and carousels that each stand alone. |
 | `/ig-audit` | Post-mortem on what you already posted. Ranks by outlier multiple and sends per reach, not views. |
 
-## The five tools that actually run
+## The six tools that actually run
 
 No dependencies, no network, nothing uploaded. They run on your machine, on
 your text.
@@ -322,6 +323,7 @@ skills/ig-human/slop.json          the lexicon: 154 terms, 18 invisible classes,
 skills/ig-human/humanize.py        the three cleaning passes
 skills/ig-human/detect.py          the five-check panel
 skills/ig-viral/swipe.py           outlier ranking and formula classification
+skills/ig-schedule/schedule.py     queue checks, timezone and daylight saving, .ics reminders
 skills/ig-profile/rubric.json      the 100-point profile score
 templates/voice.md                 your voice profile. Fill this in first.
 ```
