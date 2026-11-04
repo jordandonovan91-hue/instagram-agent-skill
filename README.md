@@ -1,6 +1,6 @@
 # The Instagram agent skill
 
-Thirteen Claude skills that run an Instagram account. Free, MIT, no signup, no
+Fifteen Claude skills that run an Instagram account. Free, MIT, no signup, no
 API key, nothing to connect.
 
 One of them writes your Reels off 26 hook formulas and scores the hook before
@@ -8,7 +8,8 @@ you waste a take on it. One goes and finds the reels that are actually working
 in your niche and ranks them by how far each beat its own account. One writes
 the caption and shows you exactly what the feed shows before the "... more".
 One scores your profile out of 100 and rewrites what lost points. One plans the
-week.
+week, one puts times on it and reminds you to post, and one runs all of them
+as a team.
 
 And one is the humanizer, which is the reason the rest are usable. It strips
 the em dashes, the slop vocabulary and the invisible watermark characters out
@@ -52,7 +53,7 @@ reels and say "write my voice.md from these". Every skill reads that file. It
 matters more here than on other platforms, because you have to say the words
 out loud.
 
-## The thirteen
+## The fifteen
 
 | command | what it does |
 | --- | --- |
@@ -69,8 +70,10 @@ out loud.
 | `/ig-dm` | The keyword delivery, the first message, the collab pitch, and the two follow-ups. Two. |
 | `/ig-repurpose` | One video, podcast or newsletter into a week of reels and carousels that each stand alone. |
 | `/ig-audit` | Post-mortem on what you already posted. Ranks by outlier multiple and sends per reach, not views. |
+| `/ig-schedule` | The scheduling assistant. Times in your audience's timezone, a checked posting queue, calendar reminders, and a posting card per slot for Instagram's own scheduler. |
+| `/ig-team` | Runs the pack as one team. Routes a job to the right skills in order, hands work between them through `~/.claude/instagram/`, and stops at the gates. |
 
-## The five tools that actually run
+## The tools that actually run
 
 No dependencies, no network, nothing uploaded. They run on your machine, on
 your text.
@@ -195,6 +198,24 @@ After `humanize.py`, with the flagged structures still unrewritten:
 ```
   HUMAN SCORE   ###################.....  79.7   PASS    (+47.2)
 ```
+
+### The schedule and the team desk
+
+```bash
+python3 schedule.py check queue.json                 # lint the week before it starts
+python3 schedule.py week  queue.json                 # slot by slot
+python3 schedule.py ics   queue.json --out week.ics  # reminders for your own calendar
+python3 schedule.py mark  queue.json w46-tue-reel posted
+python3 team.py                                      # what is on the desk, what runs next
+```
+
+`schedule.py` fails a post that is marked ready without an asset or a caption,
+a caption over the five-hashtag cap or still holding a `{{placeholder}}`, and
+warns on feed posts under 12 hours apart, the same pillar back to back, or a
+week with fewer than three reels. Times are in the queue's timezone
+(`Australia/Sydney` by default, with daylight saving handled), and the `.ics`
+file alarms 30 minutes before each post and blocks the hour after it for
+comments. On Windows, `pip install tzdata` once, or pass `--offset +11:00`.
 
 ### The swipe file
 
@@ -323,7 +344,11 @@ skills/ig-human/humanize.py        the three cleaning passes
 skills/ig-human/detect.py          the five-check panel
 skills/ig-viral/swipe.py           outlier ranking and formula classification
 skills/ig-profile/rubric.json      the 100-point profile score
+skills/ig-schedule/schedule.py     queue checker, week view and .ics reminders
+skills/ig-team/team.json           roles, shared files and pipelines for the team
+skills/ig-team/team.py             the shared-desk status and next move
 templates/voice.md                 your voice profile. Fill this in first.
+templates/queue.json               an example posting queue
 ```
 
 ## Credit
