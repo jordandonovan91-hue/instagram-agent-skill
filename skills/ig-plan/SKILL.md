@@ -96,5 +96,9 @@ Say "write Tuesday" and I will draft it.
 ```
 
 Write the plan to `~/.claude/instagram/plan.md` so the other skills can read
-it. Nothing is scheduled or posted anywhere. This is a plan and the user runs
-it.
+it. Give every slot an id of the form `w<ISO week>-<day>-<format>`, for example
+`w46-tue-reel`, so `/ig-schedule` and the writers can find it. Nothing is
+scheduled or posted anywhere. This is a plan and the user runs it.
+
+Then offer `/ig-schedule` to put exact times on it, check it and set
+reminders, or `/ig-team` to run the whole week end to end.

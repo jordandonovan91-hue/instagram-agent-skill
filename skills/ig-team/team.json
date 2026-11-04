@@ -1,0 +1,74 @@
+{
+  "roles": {
+    "strategist": {
+      "skills": ["ig-plan", "ig-viral", "ig-audit"],
+      "job": "decides what to make, from evidence"
+    },
+    "writers": {
+      "skills": ["ig-reel", "ig-carousel", "ig-caption", "ig-story", "ig-repurpose"],
+      "job": "turns a slot or a source into a draft"
+    },
+    "editor": {
+      "skills": ["ig-human"],
+      "job": "the gate: nothing reaches the user until it passes"
+    },
+    "scheduler": {
+      "skills": ["ig-schedule"],
+      "job": "times, queue, reminders, posting cards"
+    },
+    "community": {
+      "skills": ["ig-reply", "ig-comment", "ig-dm"],
+      "job": "the conversation after and around each post"
+    },
+    "brand": {
+      "skills": ["ig-profile"],
+      "job": "the page every reel sends people to"
+    }
+  },
+
+  "files": {
+    "voice.md":   {"writer": "user (template: templates/voice.md)", "readers": "every skill", "stale_days": 90},
+    "swipe.md":   {"writer": "ig-viral", "readers": "ig-plan, ig-reel", "stale_days": 45},
+    "plan.md":    {"writer": "ig-plan", "readers": "ig-team, ig-schedule, writers", "stale_days": 8},
+    "queue.json": {"writer": "ig-schedule", "readers": "ig-team, ig-schedule", "stale_days": 8},
+    "log.md":     {"writer": "ig-reel, ig-schedule, ig-comment", "readers": "ig-plan, ig-audit, ig-comment", "stale_days": 14}
+  },
+
+  "pipelines": {
+    "week": {
+      "trigger": ["run my week", "do the whole week", "set up the week"],
+      "steps": ["ig-viral (only if swipe.md is missing or stale)", "ig-plan", "ig-schedule (times + queue)",
+                "for each slot: writer -> ig-caption -> ig-human", "ig-schedule (check + reminders)"]
+    },
+    "reel": {
+      "trigger": ["make a reel", "write tuesday", "next post"],
+      "steps": ["ig-reel", "ig-human", "ig-caption", "ig-human", "ig-schedule (queue + card)"]
+    },
+    "carousel": {
+      "trigger": ["make a carousel", "slides"],
+      "steps": ["ig-carousel", "ig-human", "ig-caption", "ig-human", "ig-schedule (queue + card)"]
+    },
+    "repurpose": {
+      "trigger": ["repurpose this", "turn this into posts"],
+      "steps": ["ig-repurpose", "ig-plan (slot the pieces into weeks)", "ig-schedule",
+                "per piece: ig-reel or ig-carousel -> ig-caption -> ig-human"]
+    },
+    "launch": {
+      "trigger": ["I'm launching", "promote my guide", "sell this"],
+      "steps": ["ig-plan (offer week)", "ig-reel x2 + ig-carousel", "ig-story (daily, DM sticker)",
+                "ig-dm (keyword delivery)", "ig-human on all of it", "ig-schedule"]
+    },
+    "after-post": {
+      "trigger": ["I posted it", "it's live", "comments are coming in"],
+      "steps": ["ig-schedule (mark posted, log)", "ig-reply (first hour)", "ig-story (point at it)", "ig-dm (hands raised)"]
+    },
+    "daily": {
+      "trigger": ["what do I do today", "daily round"],
+      "steps": ["ig-schedule next", "ig-comment (10 accounts from plan.md)", "ig-story", "ig-reply if a post is under 48h old"]
+    },
+    "review": {
+      "trigger": ["monthly review", "what's working", "why is nothing working"],
+      "steps": ["ig-audit", "ig-viral", "ig-profile", "ig-plan (next month's themes)"]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "timezone": "Australia/Sydney",
+  "posts": [
+    {
+      "id": "w46-tue-reel",
+      "when": "2026-11-10 07:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "3 AI replies that save 5 hours a week",
+      "hook": "#5 Time Collapse",
+      "asset": "D:/ShortsForge/instagram-tools/out/w46-tue.mp4",
+      "caption": "captions/w46-tue.txt",
+      "status": "ready"
+    },
+    {
+      "id": "w46-thu-carousel",
+      "when": "2026-11-12 12:30",
+      "format": "carousel",
+      "pillar": "proof",
+      "title": "The 10 AI setups guide, slide by slide",
+      "hook": "",
+      "asset": "D:/ShortsForge/instagram-tools/out/w46-thu/",
+      "caption": "captions/w46-thu.txt",
+      "status": "drafted"
+    },
+    {
+      "id": "w46-fri-reel",
+      "when": "2026-11-13 19:30",
+      "format": "reel",
+      "pillar": "opinion",
+      "title": "Do not hire a VA until you have tried this",
+      "hook": "#2 Negative Command",
+      "status": "idea"
+    },
+    {
+      "id": "w46-sun-reel",
+      "when": "2026-11-15 19:00",
+      "format": "reel",
+      "pillar": "story",
+      "title": "The Sunday night invoice",
+      "hook": "#21 Mid-Sentence",
+      "status": "idea"
+    }
+  ]
+}
