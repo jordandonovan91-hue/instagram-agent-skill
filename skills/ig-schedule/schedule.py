@@ -55,6 +55,8 @@ HASHTAG_LIMIT = 5        # Instagram's per-post cap since 18 Dec 2025.
 CAPTION_LIMIT = 2200
 HASHTAG_RE = re.compile(r"(?:^|\s)#[A-Za-z0-9_]+")
 MIN_GAP_HOURS = 12       # Two feed posts closer than this split their own reach.
+MAX_AHEAD_DAYS = 75      # Instagram's own scheduler takes posts up to 75 days out.
+URL_RE = re.compile(r"https?://\S+")
 
 
 # ---------------------------------------------------------------- loading
@@ -109,6 +111,14 @@ def parse_when(value, tz):
     return None
 
 
+def wall_clock_exists(when):
+    """False for a local time skipped by a daylight-saving jump, e.g. 2:30am
+    on the first Sunday of October in Sydney."""
+    naive = when.replace(tzinfo=None)
+    back = when.astimezone(dt.timezone.utc).astimezone(when.tzinfo)
+    return back.replace(tzinfo=None) == naive
+
+
 def caption_text(post, base_dir):
     cap = post.get("caption")
     if not cap:
@@ -124,9 +134,12 @@ def caption_text(post, base_dir):
 
 # ---------------------------------------------------------------- checks
 
-def check(data, tz, base_dir, now):
-    """Return (errors, warnings) as lists of strings."""
+def check(data, tz, base_dir, now, failed_ids=None):
+    """Return (errors, warnings) as lists of strings. If failed_ids is a set,
+    the id of every post with a FAIL is added to it."""
     errors, warnings = [], []
+    if failed_ids is None:
+        failed_ids = set()
     posts = data["posts"]
     seen = set()
     dated = []
@@ -155,7 +168,14 @@ def check(data, tz, base_dir, now):
             if status in ("ready", "scheduled"):
                 errors.append(f"{where} is {status} but has no time")
             continue
+        if not wall_clock_exists(when):
+            errors.append(f"{where} {when:%a %d %b %H:%M} does not exist: the clocks jump forward over it for daylight saving")
+            failed_ids.add(pid)
+            continue
         dated.append((when, p, pid))
+
+        if when - now > dt.timedelta(days=MAX_AHEAD_DAYS) and status != "posted":
+            warnings.append(f"{where} is more than {MAX_AHEAD_DAYS} days out. Instagram's scheduler will not take it yet")
 
         if when < now and status != "posted":
             warnings.append(f"{where} was due {when:%a %d %b %H:%M} and is still '{status}'")
@@ -179,9 +199,15 @@ def check(data, tz, base_dir, now):
                     errors.append(f"{where} caption is {len(text)} characters, the limit is {CAPTION_LIMIT}")
                 if "{{" in text:
                     errors.append(f"{where} caption still has a {{{{placeholder}}}} in it")
+                if URL_RE.search(text):
+                    warnings.append(f"{where} caption has a link, and caption links are not clickable. Use the bio link or a Story link sticker")
 
         if status in ("drafted", "idea") and when >= now and when - now < dt.timedelta(hours=24):
             warnings.append(f"{where} goes out in under 24h and is only '{status}'")
+
+    offsets = {when.utcoffset() for when, _, _ in dated if when >= now}
+    if len(offsets) > 1:
+        warnings.append("the queue crosses a daylight-saving change. Re-check each time in Instagram's scheduler after you set it")
 
     feed = sorted([d for d in dated if (d[1].get("format") or "").lower() != "story"],
                   key=lambda d: d[0])
@@ -206,6 +232,11 @@ def check(data, tz, base_dir, now):
         if len(items) >= 3 and reels < 3:
             warnings.append(f"week {week}: {reels} reel(s) of {len(items)} posts. Reels are what reach non-followers; aim for three")
 
+    # Every error line starts with "[id]"; record which posts failed.
+    for e in errors:
+        m = re.match(r"\[(.+?)\]", e)
+        if m:
+            failed_ids.add(m.group(1))
     return errors, warnings
 
 
@@ -287,16 +318,21 @@ def utc(when):
 
 
 def cmd_ics(data, tz, base_dir, out, remind, engage, now):
+    failed = set()
+    check(data, tz, base_dir, now, failed)
     stamp = utc(now)
     lines = ["BEGIN:VCALENDAR", "VERSION:2.0",
              "PRODID:-//instagram-agent-skill//ig-schedule//EN",
              "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
              "X-WR-CALNAME:Instagram posting"]
-    count = 0
-    for p in data["posts"]:
+    count, skipped = 0, []
+    for i, p in enumerate(data["posts"]):
         when = parse_when(p.get("when"), tz)
         status = p.get("status") or "idea"
         if not when or when < now or status == "posted":
+            continue
+        if (p.get("id") or f"#{i + 1}") in failed:
+            skipped.append(p.get("id") or f"#{i + 1}")
             continue
         fmt = (p.get("format") or "post").lower()
         title = p.get("title") or p.get("id") or "post"
@@ -329,6 +365,8 @@ def cmd_ics(data, tz, base_dir, out, remind, engage, now):
         fh.write("\r\n".join(fold(l) for l in lines) + "\r\n")
     print(f"Wrote {count} event(s) to {out}. Import it into Google Calendar, Outlook or Apple Calendar.")
     print(f"Each one alarms {remind} min before and blocks {max(engage, 15)} min for the comment hour.")
+    if skipped:
+        print(f"Skipped {len(skipped)} post(s) that fail the check: {', '.join(skipped)}. Run check and fix them first.")
 
 
 def cmd_mark(path, data, was_list, pid, status):

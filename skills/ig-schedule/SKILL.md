@@ -54,7 +54,10 @@ Ask once, if it is not already written down: **which timezone is the audience
 in?** Default to `Australia/Sydney` for this account. It follows AEDT and AEST
 automatically. If the audience is spread across Australia, schedule for Sydney
 and Melbourne time; Brisbane is an hour behind during daylight saving, Perth
-three.
+three. Queensland, WA and the NT do not use daylight saving. In NSW, Victoria,
+the ACT, Tasmania and SA it starts on the first Sunday of October and ends on
+the first Sunday of April. `schedule.py check` fails a time the clocks skip
+over and warns when a queue crosses a changeover.
 
 ## Picking times
 
@@ -77,6 +80,9 @@ Rules that matter more than the hour:
 - **Same time on the same weekday, week after week.** Followers learn it, and
   `/ig-audit` gets a clean comparison.
 - **Never two of the same pillar back to back.** The checker flags it.
+- **Schedule the day before it goes live**, not the morning of. A post that
+  is still being finished at 7am goes out at 9am.
+- **Up to 75 days ahead.** That is as far as Instagram's scheduler goes.
 - **Stories are daily and are not time-critical.** Give them a rough window,
   not a minute.
 
@@ -136,13 +142,21 @@ At 7:30 to 8:30am stay on for comments, then say "I posted it".
 
 Show the caption in its own fenced block so it copies clean.
 
+- **Alt text on every post.** Never skip it. It helps screen-reader users and
+  tells Instagram what the post is about.
+- **Links in a caption are not clickable.** Point to the bio link or a Story
+  link sticker. The checker warns on any `http` in a caption.
+- **Reels with music from Instagram's library:** schedule them from the phone
+  app. Business Suite on desktop does not always offer the music library.
+
 ## Reminders
 
 Two options. Offer both, do the one the user picks.
 
 1. **A calendar file.** `python3 schedule.py ics queue.json --out week.ics`.
    One event per post, an alarm 30 minutes before (`--remind`), and the event
-   blocks the hour after posting for comments (`--engage`). The user imports it
+   blocks the hour after posting for comments (`--engage`). Posts that fail the
+   check are left out until they are fixed. The user imports it
    into Google Calendar, Outlook or Apple Calendar. Nothing is sent anywhere.
 2. **Their Google Calendar directly**, if a Google Calendar connector is
    available in this session. Show the list of events first and create them
