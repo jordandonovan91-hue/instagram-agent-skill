@@ -1,0 +1,95 @@
+{
+  "id": "w49-tue-pm",
+  "title": "Plan January's posts in 20 minutes",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Want January's posts done before Christmas?",
+      "card": "JANUARY POSTS, DONE",
+      "visual": {
+        "type": "repeat",
+        "text": "I'll do it in January..."
+      }
+    },
+    {
+      "say": "Twenty minutes. One prompt.",
+      "card": "20 MINUTES. ONE PROMPT.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "12 posts",
+          "January"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Plan 12 Instagram posts for January for my [type of business] for [who]. 3 a week. Mix tips, behind-the-scenes, customer questions and one offer. Give a one-line idea and a hook for each."
+      }
+    },
+    {
+      "say": "Three a week. Tips, behind the scenes, questions, one offer.",
+      "card": "MIX IT UP",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Tips",
+          "Behind the scenes",
+          "Questions",
+          "Offer"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Pick your favourite four and write those first.",
+      "card": "WRITE YOUR FAVE 4 FIRST",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "4 done",
+          "8 to go"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Come back from holidays with posts ready.",
+      "card": "HOLIDAYS WITH POSTS READY",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Relax",
+          "Posts ready"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

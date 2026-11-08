@@ -1,0 +1,9 @@
+Meeting notes are useless if nobody reads them. Turn them into three parts.
+
+Paste this into ChatGPT, Claude or Gemini:
+
+"Turn these meeting notes into 3 parts: what we decided, what needs doing, and who's doing it by when. Max 8 lines: [paste notes]"
+
+Send it to everyone straight after. Works for staff catch-ups, client meetings and site meetings.
+
+#smallbusiness #aitools #smallbusinessaustralia #productivity

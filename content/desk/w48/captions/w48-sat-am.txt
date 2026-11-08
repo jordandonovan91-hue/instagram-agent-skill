@@ -1,0 +1,11 @@
+ChatGPT or Claude? Short answer: both have free versions and both are good.
+
+My rough rule:
+ChatGPT for images, voice chats and quick answers.
+Claude for long documents and writing that sounds more human.
+
+Best test: paste the same prompt into both, like "Try the same prompt in both: Write a friendly reply to this customer: [message]. Under 50 words.", and keep the one you like.
+
+Features change often, so check what's in the free plan when you sign up.
+
+#smallbusiness #aitools #smallbusinessaustralia #productivity

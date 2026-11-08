@@ -1,0 +1,93 @@
+{
+  "id": "w49-sat-pm",
+  "title": "5 free AI tools worth trying",
+  "hook_formula": "#11 Numbered",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Five free AI tools worth trying this summer.",
+      "card": "5 FREE AI TOOLS",
+      "visual": {
+        "type": "repeat",
+        "text": "Too many tools..."
+      }
+    },
+    {
+      "say": "All have free plans. Here's what each is for.",
+      "card": "FREE PLANS. WHAT EACH IS FOR.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Free"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "I run a [type of business]. Which of these would help me most and why: ChatGPT, Claude, Gemini, Canva, Otter?"
+      }
+    },
+    {
+      "say": "ChatGPT, Claude or Gemini for writing and replies.",
+      "card": "WRITING: CHATGPT, CLAUDE, GEMINI",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Canva for posts and flyers. Otter for call notes.",
+      "card": "DESIGN: CANVA. NOTES: OTTER",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Canva",
+          "Otter"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Free plans change, so check before you rely on one.",
+      "card": "FREE PLANS CHANGE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Check",
+          "Then rely"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

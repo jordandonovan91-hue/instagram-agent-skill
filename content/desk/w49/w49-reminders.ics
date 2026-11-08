@@ -1,0 +1,137 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//instagram-agent-skill//ig-schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Instagram posting
+BEGIN:VEVENT
+UID:w49-mon-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261129T233000Z
+DTEND:20261130T003000Z
+SUMMARY:IG reel: One call into notes, a quote and a follow-up
+DESCRIPTION:Post: One call into notes, a quote and a follow-up\nAsset: D:/ShortsForge/instagram-tools/w49-mon-am.mp4\nCaption: captions/w49-mon-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: One call into notes, a quote and a follow-up
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w49-mon-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261130T103000Z
+DTEND:20261130T113000Z
+SUMMARY:IG reel: Meeting notes you'll actually read
+DESCRIPTION:Post: Meeting notes you'll actually read\nAsset: D:/ShortsForge/instagram-tools/w49-mon-pm.mp4\nCaption: captions/w49-mon-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Meeting notes you'll actually read
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w49-tue-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261130T233000Z
+DTEND:20261201T003000Z
+SUMMARY:IG reel: AI won't replace you
+DESCRIPTION:Post: AI won't replace you\nAsset: D:/ShortsForge/instagram-tools/w49-tue-am.mp4\nCaption: captions/w49-tue-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: AI won't replace you
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w49-tue-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261201T103000Z
+DTEND:20261201T113000Z
+SUMMARY:IG reel: Plan January's posts in 20 minutes
+DESCRIPTION:Post: Plan January's posts in 20 minutes\nAsset: D:/ShortsForge/instagram-tools/w49-tue-pm.mp4\nCaption: captions/w49-tue-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Plan January's posts in 20 minutes
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w49-thu-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261202T233000Z
+DTEND:20261203T003000Z
+SUMMARY:IG carousel: Your December, sorted
+DESCRIPTION:Post: Your December, sorted\nAsset: /mnt/project-files/instagram/desk/w49/carousel/w49-thu-am-*.png\nCaption: captions/w49-thu-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Your December, sorted
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w49-thu-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261203T103000Z
+DTEND:20261203T113000Z
+SUMMARY:IG carousel: Christmas hours and closure messages
+DESCRIPTION:Post: Christmas hours and closure messages\nAsset: /mnt/project-files/instagram/desk/w49/carousel/w49-thu-pm-*.png\nCaption: captions/w49-thu-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Christmas hours and closure messages
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w49-fri-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261203T233000Z
+DTEND:20261204T003000Z
+SUMMARY:IG reel: Get the guide before the silly season
+DESCRIPTION:Post: Get the guide before the silly season\nAsset: D:/ShortsForge/instagram-tools/w49-fri-am.mp4\nCaption: captions/w49-fri-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Get the guide before the silly season
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w49-fri-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261204T103000Z
+DTEND:20261204T113000Z
+SUMMARY:IG reel: End-of-year thank you to customers
+DESCRIPTION:Post: End-of-year thank you to customers\nAsset: D:/ShortsForge/instagram-tools/w49-fri-pm.mp4\nCaption: captions/w49-fri-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: End-of-year thank you to customers
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w49-sat-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261205T003000Z
+DTEND:20261205T013000Z
+SUMMARY:IG reel: What 3 hours back looks like
+DESCRIPTION:Post: What 3 hours back looks like\nAsset: D:/ShortsForge/instagram-tools/w49-sat-am.mp4\nCaption: captions/w49-sat-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: What 3 hours back looks like
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w49-sat-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261205T103000Z
+DTEND:20261205T113000Z
+SUMMARY:IG reel: 5 free AI tools worth trying
+DESCRIPTION:Post: 5 free AI tools worth trying\nAsset: D:/ShortsForge/instagram-tools/w49-sat-pm.mp4\nCaption: captions/w49-sat-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: 5 free AI tools worth trying
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,9 @@
+One customer call can turn into three finished jobs before you leave the driveway.
+
+Record a voice memo of what they said, then paste the transcript into ChatGPT, Claude or Gemini with this:
+
+"Here's a voice memo transcript of my call with a customer: [paste]. Give me 1) short notes, 2) a draft quote with [check] next to anything unclear, 3) a follow-up text. Leave out their phone and address."
+
+Check every number before you send. And don't paste phone numbers or addresses in.
+
+#smallbusiness #aitools #smallbusinessaustralia #productivity

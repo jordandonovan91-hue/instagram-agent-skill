@@ -1,0 +1,9 @@
+Hot take: asking AI for "ideas" just gives you more work. Ask it for a checklist.
+
+Paste this into ChatGPT, Claude or Gemini:
+
+"Make me a step-by-step checklist for [job, like onboarding a new customer]. Max 10 steps, in order, one line each, with who does it."
+
+Works for onboarding a customer, prepping a job, or handing work to staff. Print it and tick it off.
+
+#smallbusiness #aitools #smallbusinessaustralia #productivity

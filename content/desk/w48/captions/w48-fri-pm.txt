@@ -1,0 +1,9 @@
+Chasing money is awkward. Let AI write the awkward bit.
+
+Paste this into ChatGPT, Claude or Gemini:
+
+"Write 3 polite payment reminders for invoice [number] for [amount], due [date]: a friendly nudge, a firmer one at 7 days, and a final one at 14 days. Under 60 words each, include how to pay: [details]."
+
+Save all three and use them every month. Always say exactly how to pay, it removes the excuse.
+
+#smallbusiness #aitools #smallbusinessaustralia #productivity

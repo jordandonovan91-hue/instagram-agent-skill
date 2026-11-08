@@ -1,0 +1,115 @@
+{
+  "timezone": "Australia/Perth",
+  "posts": [
+    {
+      "id": "w48-mon-am",
+      "when": "2026-11-23 07:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "The 2 minute inbox fix",
+      "hook": "#10 If This, Then Watch",
+      "asset": "D:/ShortsForge/instagram-tools/w48-mon-am.mp4",
+      "caption": "captions/w48-mon-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w48-mon-pm",
+      "when": "2026-11-23 18:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "Answer DMs faster with saved replies",
+      "hook": "#3 The Fix",
+      "asset": "D:/ShortsForge/instagram-tools/w48-mon-pm.mp4",
+      "caption": "captions/w48-mon-pm.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w48-tue-am",
+      "when": "2026-11-24 07:30",
+      "format": "reel",
+      "pillar": "opinion",
+      "title": "Ask AI for checklists, not ideas",
+      "hook": "#20 Permission",
+      "asset": "D:/ShortsForge/instagram-tools/w48-tue-am.mp4",
+      "caption": "captions/w48-tue-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w48-tue-pm",
+      "when": "2026-11-24 18:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "Write a job ad in 2 minutes",
+      "hook": "#3 The Fix",
+      "asset": "D:/ShortsForge/instagram-tools/w48-tue-pm.mp4",
+      "caption": "captions/w48-tue-pm.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w48-thu-am",
+      "when": "2026-11-26 07:30",
+      "format": "carousel",
+      "pillar": "teach",
+      "title": "7 prompts for quoting faster",
+      "hook": "#11 Numbered With A Favourite",
+      "asset": "/mnt/project-files/instagram/desk/w48/carousel/w48-thu-am-*.png",
+      "caption": "captions/w48-thu-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w48-thu-pm",
+      "when": "2026-11-26 18:30",
+      "format": "carousel",
+      "pillar": "teach",
+      "title": "Your weekly AI routine",
+      "hook": "#11 Numbered",
+      "asset": "/mnt/project-files/instagram/desk/w48/carousel/w48-thu-pm-*.png",
+      "caption": "captions/w48-thu-pm.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w48-fri-am",
+      "when": "2026-11-27 07:30",
+      "format": "reel",
+      "pillar": "offer",
+      "title": "10 free AI setups in 30 seconds",
+      "hook": "#12 The Objection",
+      "asset": "D:/ShortsForge/instagram-tools/w48-fri-am.mp4",
+      "caption": "captions/w48-fri-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w48-fri-pm",
+      "when": "2026-11-27 18:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "Chase unpaid invoices politely",
+      "hook": "#3 The Fix",
+      "asset": "D:/ShortsForge/instagram-tools/w48-fri-pm.mp4",
+      "caption": "captions/w48-fri-pm.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w48-sat-am",
+      "when": "2026-11-28 08:30",
+      "format": "reel",
+      "pillar": "explainer",
+      "title": "ChatGPT vs Claude: which for what",
+      "hook": "#17 Head To Head",
+      "asset": "D:/ShortsForge/instagram-tools/w48-sat-am.mp4",
+      "caption": "captions/w48-sat-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w48-sat-pm",
+      "when": "2026-11-28 18:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "Make a simple price list page",
+      "hook": "#3 The Fix",
+      "asset": "D:/ShortsForge/instagram-tools/w48-sat-pm.mp4",
+      "caption": "captions/w48-sat-pm.txt",
+      "status": "draft"
+    }
+  ]
+}

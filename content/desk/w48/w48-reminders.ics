@@ -1,0 +1,137 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//instagram-agent-skill//ig-schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Instagram posting
+BEGIN:VEVENT
+UID:w48-mon-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261122T233000Z
+DTEND:20261123T003000Z
+SUMMARY:IG reel: The 2 minute inbox fix
+DESCRIPTION:Post: The 2 minute inbox fix\nAsset: D:/ShortsForge/instagram-tools/w48-mon-am.mp4\nCaption: captions/w48-mon-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: The 2 minute inbox fix
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w48-mon-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261123T103000Z
+DTEND:20261123T113000Z
+SUMMARY:IG reel: Answer DMs faster with saved replies
+DESCRIPTION:Post: Answer DMs faster with saved replies\nAsset: D:/ShortsForge/instagram-tools/w48-mon-pm.mp4\nCaption: captions/w48-mon-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Answer DMs faster with saved replies
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w48-tue-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261123T233000Z
+DTEND:20261124T003000Z
+SUMMARY:IG reel: Ask AI for checklists, not ideas
+DESCRIPTION:Post: Ask AI for checklists, not ideas\nAsset: D:/ShortsForge/instagram-tools/w48-tue-am.mp4\nCaption: captions/w48-tue-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Ask AI for checklists, not ideas
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w48-tue-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261124T103000Z
+DTEND:20261124T113000Z
+SUMMARY:IG reel: Write a job ad in 2 minutes
+DESCRIPTION:Post: Write a job ad in 2 minutes\nAsset: D:/ShortsForge/instagram-tools/w48-tue-pm.mp4\nCaption: captions/w48-tue-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Write a job ad in 2 minutes
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w48-thu-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261125T233000Z
+DTEND:20261126T003000Z
+SUMMARY:IG carousel: 7 prompts for quoting faster
+DESCRIPTION:Post: 7 prompts for quoting faster\nAsset: /mnt/project-files/instagram/desk/w48/carousel/w48-thu-am-*.png\nCaption: captions/w48-thu-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: 7 prompts for quoting faster
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w48-thu-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261126T103000Z
+DTEND:20261126T113000Z
+SUMMARY:IG carousel: Your weekly AI routine
+DESCRIPTION:Post: Your weekly AI routine\nAsset: /mnt/project-files/instagram/desk/w48/carousel/w48-thu-pm-*.png\nCaption: captions/w48-thu-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Your weekly AI routine
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w48-fri-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261126T233000Z
+DTEND:20261127T003000Z
+SUMMARY:IG reel: 10 free AI setups in 30 seconds
+DESCRIPTION:Post: 10 free AI setups in 30 seconds\nAsset: D:/ShortsForge/instagram-tools/w48-fri-am.mp4\nCaption: captions/w48-fri-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: 10 free AI setups in 30 seconds
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w48-fri-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261127T103000Z
+DTEND:20261127T113000Z
+SUMMARY:IG reel: Chase unpaid invoices politely
+DESCRIPTION:Post: Chase unpaid invoices politely\nAsset: D:/ShortsForge/instagram-tools/w48-fri-pm.mp4\nCaption: captions/w48-fri-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Chase unpaid invoices politely
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w48-sat-am@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261128T003000Z
+DTEND:20261128T013000Z
+SUMMARY:IG reel: ChatGPT vs Claude: which for what
+DESCRIPTION:Post: ChatGPT vs Claude: which for what\nAsset: D:/ShortsForge/instagram-tools/w48-sat-am.mp4\nCaption: captions/w48-sat-am.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: ChatGPT vs Claude: which for what
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w48-sat-pm@ig-schedule
+DTSTAMP:20261108T150000Z
+DTSTART:20261128T103000Z
+DTEND:20261128T113000Z
+SUMMARY:IG reel: Make a simple price list page
+DESCRIPTION:Post: Make a simple price list page\nAsset: D:/ShortsForge/instagram-tools/w48-sat-pm.mp4\nCaption: captions/w48-sat-pm.txt
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Post in 30 min: Make a simple price list page
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

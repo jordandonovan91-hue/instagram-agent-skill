@@ -1,0 +1,115 @@
+{
+  "timezone": "Australia/Perth",
+  "posts": [
+    {
+      "id": "w49-mon-am",
+      "when": "2026-11-30 07:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "One call into notes, a quote and a follow-up",
+      "hook": "#10 If This, Then Watch",
+      "asset": "D:/ShortsForge/instagram-tools/w49-mon-am.mp4",
+      "caption": "captions/w49-mon-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w49-mon-pm",
+      "when": "2026-11-30 18:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "Meeting notes you'll actually read",
+      "hook": "#3 The Fix",
+      "asset": "D:/ShortsForge/instagram-tools/w49-mon-pm.mp4",
+      "caption": "captions/w49-mon-pm.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w49-tue-am",
+      "when": "2026-12-01 07:30",
+      "format": "reel",
+      "pillar": "opinion",
+      "title": "AI won't replace you",
+      "hook": "#5 Contrarian",
+      "asset": "D:/ShortsForge/instagram-tools/w49-tue-am.mp4",
+      "caption": "captions/w49-tue-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w49-tue-pm",
+      "when": "2026-12-01 18:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "Plan January's posts in 20 minutes",
+      "hook": "#3 The Fix",
+      "asset": "D:/ShortsForge/instagram-tools/w49-tue-pm.mp4",
+      "caption": "captions/w49-tue-pm.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w49-thu-am",
+      "when": "2026-12-03 07:30",
+      "format": "carousel",
+      "pillar": "teach",
+      "title": "Your December, sorted",
+      "hook": "#11 Numbered",
+      "asset": "/mnt/project-files/instagram/desk/w49/carousel/w49-thu-am-*.png",
+      "caption": "captions/w49-thu-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w49-thu-pm",
+      "when": "2026-12-03 18:30",
+      "format": "carousel",
+      "pillar": "teach",
+      "title": "Christmas hours and closure messages",
+      "hook": "#11 Numbered",
+      "asset": "/mnt/project-files/instagram/desk/w49/carousel/w49-thu-pm-*.png",
+      "caption": "captions/w49-thu-pm.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w49-fri-am",
+      "when": "2026-12-04 07:30",
+      "format": "reel",
+      "pillar": "offer",
+      "title": "Get the guide before the silly season",
+      "hook": "#12 The Objection",
+      "asset": "D:/ShortsForge/instagram-tools/w49-fri-am.mp4",
+      "caption": "captions/w49-fri-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w49-fri-pm",
+      "when": "2026-12-04 18:30",
+      "format": "reel",
+      "pillar": "teach",
+      "title": "End-of-year thank you to customers",
+      "hook": "#3 The Fix",
+      "asset": "D:/ShortsForge/instagram-tools/w49-fri-pm.mp4",
+      "caption": "captions/w49-fri-pm.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w49-sat-am",
+      "when": "2026-12-05 08:30",
+      "format": "reel",
+      "pillar": "story",
+      "title": "What 3 hours back looks like",
+      "hook": "#8 The Story",
+      "asset": "D:/ShortsForge/instagram-tools/w49-sat-am.mp4",
+      "caption": "captions/w49-sat-am.txt",
+      "status": "draft"
+    },
+    {
+      "id": "w49-sat-pm",
+      "when": "2026-12-05 18:30",
+      "format": "reel",
+      "pillar": "explainer",
+      "title": "5 free AI tools worth trying",
+      "hook": "#11 Numbered",
+      "asset": "D:/ShortsForge/instagram-tools/w49-sat-pm.mp4",
+      "caption": "captions/w49-sat-pm.txt",
+      "status": "draft"
+    }
+  ]
+}

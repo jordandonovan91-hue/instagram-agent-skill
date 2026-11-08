@@ -1,0 +1,9 @@
+Tired of "how much?" messages? Put a simple price guide on your site.
+
+Paste this into ChatGPT, Claude or Gemini:
+
+"Turn my prices into a simple 'prices from' guide for my website: [list services and prices]. One line each with what's included, then one line on what changes the price."
+
+"From" prices mean you're not locked in, and one line on what changes the price stops arguments later.
+
+#smallbusiness #aitools #smallbusinessaustralia #productivity

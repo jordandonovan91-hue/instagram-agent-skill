@@ -1,0 +1,96 @@
+{
+  "id": "w48-fri-am",
+  "title": "10 free AI setups in 30 seconds",
+  "hook_formula": "#12 The Objection",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Ten free AI setups in thirty seconds. Go.",
+      "card": "10 SETUPS. 30 SECONDS.",
+      "visual": {
+        "type": "repeat",
+        "text": "Where do I even start?"
+      }
+    },
+    {
+      "say": "Replies, quotes, posts, reviews, emails and more.",
+      "card": "REPLIES. QUOTES. POSTS.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Replies",
+          "Quotes",
+          "Posts",
+          "Reviews"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Start here: I run a [type of business] for [who]. Ask me 3 questions, then help me with [job]."
+      }
+    },
+    {
+      "say": "Every setup is one copy and paste.",
+      "card": "ONE COPY AND PASTE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Copy",
+          "Paste",
+          "Done"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "No course. No paid apps. Free versions are fine.",
+      "card": "NO COURSE. NO PAID APPS.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Free",
+          "10 setups"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "They're all in my free guide. Link in bio.",
+      "card": "FREE GUIDE, LINK IN BIO",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Free guide",
+          "Link in bio"
+        ],
+        "active": 0
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

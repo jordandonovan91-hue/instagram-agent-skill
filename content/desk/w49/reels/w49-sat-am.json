@@ -1,0 +1,93 @@
+{
+  "id": "w49-sat-am",
+  "title": "What 3 hours back looks like",
+  "hook_formula": "#8 The Story",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Here's what three hours back a week can look like.",
+      "card": "3 HOURS BACK. EVERY WEEK.",
+      "visual": {
+        "type": "repeat",
+        "text": "Example: a solo tradie"
+      }
+    },
+    {
+      "say": "This is an example, not a real client.",
+      "card": "AN EXAMPLE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Example"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Here's my week: [list of admin jobs and how long each takes]. Which ones could AI help with, and roughly how much time would I save?"
+      }
+    },
+    {
+      "say": "Quotes from voice memos. One hour saved.",
+      "card": "QUOTES: 1 HOUR",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Quotes",
+          "1 hr"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Replies with saved templates. One hour.",
+      "card": "REPLIES: 1 HOUR",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Replies",
+          "1 hr"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Posts from one idea. Another hour. That's Friday arvo off.",
+      "card": "POSTS: 1 HOUR. FRIDAY OFF.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Quotes",
+          "Replies",
+          "Posts"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

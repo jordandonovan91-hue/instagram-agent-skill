@@ -1,0 +1,94 @@
+{
+  "id": "w48-sat-pm",
+  "title": "Make a simple price list page",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Customers keep asking 'how much'?",
+      "card": "NO PRICE LIST?",
+      "visual": {
+        "type": "repeat",
+        "text": "How much for...?"
+      }
+    },
+    {
+      "say": "Make a simple price guide they can see first.",
+      "card": "A SIMPLE PRICE GUIDE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Service",
+          "From $",
+          "What's included"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Turn my prices into a simple 'prices from' guide for my website: [list services and prices]. One line each with what's included, then one line on what changes the price."
+      }
+    },
+    {
+      "say": "Use 'from' prices so you're not locked in.",
+      "card": "'FROM' PRICES",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "From $",
+          "Depends on job"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Add one line on what changes the price.",
+      "card": "WHAT CHANGES THE PRICE",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Size",
+          "Access",
+          "Materials"
+        ]
+      }
+    },
+    {
+      "say": "Fewer tyre kickers, more real enquiries.",
+      "card": "MORE REAL ENQUIRIES",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Less 'how much'",
+          "More bookings"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

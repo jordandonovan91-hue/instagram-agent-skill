@@ -1,0 +1,95 @@
+{
+  "id": "w48-sat-am",
+  "title": "ChatGPT vs Claude: which for what",
+  "hook_formula": "#17 Head To Head",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "ChatGPT or Claude? Here's which one for what.",
+      "card": "CHATGPT OR CLAUDE?",
+      "visual": {
+        "type": "repeat",
+        "text": "Which one do I use?"
+      }
+    },
+    {
+      "say": "Both have free versions. Both are good.",
+      "card": "BOTH FREE. BOTH GOOD.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Try the same prompt in both: Write a friendly reply to this customer: [message]. Under 50 words."
+      }
+    },
+    {
+      "say": "ChatGPT is great for images, voice chats and quick answers.",
+      "card": "CHATGPT: IMAGES + VOICE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Images",
+          "Voice",
+          "Quick answers"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Claude is great for long documents and writing that sounds human.",
+      "card": "CLAUDE: LONG DOCS + WRITING",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Long docs",
+          "Writing",
+          "Tone"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Honestly, try the same prompt in both and keep the one you like.",
+      "card": "TRY BOTH. KEEP ONE.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Same prompt",
+          "Pick one"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

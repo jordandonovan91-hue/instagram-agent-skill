@@ -1,0 +1,93 @@
+{
+  "id": "w49-tue-am",
+  "title": "AI won't replace you",
+  "hook_formula": "#5 Contrarian",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "AI won't replace you.",
+      "card": "AI WON'T REPLACE YOU",
+      "visual": {
+        "type": "repeat",
+        "text": "Will AI take my job?"
+      }
+    },
+    {
+      "say": "But the owner down the road using it might.",
+      "card": "THE OWNER DOWN THE ROAD MIGHT",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "You",
+          "Them + AI"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "I run a [type of business]. What are 3 jobs I do every week that you could help me do faster?"
+      }
+    },
+    {
+      "say": "They reply faster. They quote faster.",
+      "card": "FASTER REPLIES. FASTER QUOTES.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Replies",
+          "Quotes",
+          "Posts"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Customers pick whoever gets back first.",
+      "card": "FIRST BACK WINS",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Got your quote, thanks!",
+          "When can you start?"
+        ]
+      }
+    },
+    {
+      "say": "Start with one job this week. Just one.",
+      "card": "START WITH ONE JOB",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "One job",
+          "This week"
+        ],
+        "active": 0
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

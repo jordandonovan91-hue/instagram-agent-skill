@@ -1,0 +1,95 @@
+{
+  "id": "w48-mon-pm",
+  "title": "Answer DMs faster with saved replies",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Typing the same DM answers every night?",
+      "card": "SAME DMS EVERY DAY?",
+      "visual": {
+        "type": "repeat",
+        "text": "How much do you charge?"
+      }
+    },
+    {
+      "say": "Save five replies once and tap to send.",
+      "card": "SAVE 5. TAP TO SEND.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Price",
+          "Hours",
+          "Booking"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write 5 short saved replies for my [type of business] Instagram DMs: price question, opening hours, how to book, where we work, and 'are you available'. Friendly, under 40 words each."
+      }
+    },
+    {
+      "say": "Instagram lets you save replies in your settings.",
+      "card": "INSTAGRAM SAVED REPLIES",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Settings",
+          "Business tools",
+          "Saved replies"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Give each one a short shortcut, like price.",
+      "card": "SHORTCUT: /PRICE",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "/price",
+          "/hours",
+          "/book"
+        ]
+      }
+    },
+    {
+      "say": "Type the shortcut and the whole answer pops in.",
+      "card": "TYPE. TAP. DONE.",
+      "visual": {
+        "type": "chat",
+        "label": "DMs",
+        "lines": [
+          "How much for a clean?",
+          "/price"
+        ]
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}
