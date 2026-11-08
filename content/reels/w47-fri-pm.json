@@ -1,0 +1,93 @@
+{
+  "id": "w47-fri-pm",
+  "title": "Rewrite your About page",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Does your About page start with 'established in'?",
+      "card": "YOUR ABOUT PAGE IS BORING?",
+      "visual": {
+        "type": "repeat",
+        "text": "Established in 2009..."
+      }
+    },
+    {
+      "say": "Customers want to know if you'll fix their problem.",
+      "card": "TALK ABOUT THEIR PROBLEM",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Them",
+          "Not you"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Rewrite my About page so it talks about my customers' problem first, then how I help, then a short bit about me. Keep it under 200 words, plain English: [paste current page]"
+      }
+    },
+    {
+      "say": "Their problem first.",
+      "card": "THEIR PROBLEM FIRST",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Problem",
+          "How I help",
+          "About me"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Then how you help, then a little about you.",
+      "card": "THEN YOU",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "We turn up when we say",
+          "Family run since 2009"
+        ]
+      }
+    },
+    {
+      "say": "Read it out loud before you publish.",
+      "card": "READ IT OUT LOUD",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Sounds like you?",
+          "Publish"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

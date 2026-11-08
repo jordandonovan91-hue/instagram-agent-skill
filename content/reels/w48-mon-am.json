@@ -1,0 +1,95 @@
+{
+  "id": "w48-mon-am",
+  "title": "The 2 minute inbox fix",
+  "hook_formula": "#10 If This, Then Watch",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "If your inbox eats five hours a week,",
+      "card": "INBOX EATING YOUR WEEK?",
+      "visual": {
+        "type": "repeat",
+        "text": "47 unread..."
+      }
+    },
+    {
+      "say": "this two minute setup sorts it for you.",
+      "card": "2 MINUTES. SORTED.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Reply today",
+          "This week",
+          "Ignore"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Here are my latest emails: [paste subject lines and first lines]. Sort them into Reply today, Reply this week and Ignore. For each Reply today, draft a 2 sentence reply."
+      }
+    },
+    {
+      "say": "Paste in the subject lines, not the whole thread.",
+      "card": "SUBJECT LINES ONLY",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Re: quote for Tuesday",
+          "Invoice 1043",
+          "Newsletter"
+        ]
+      }
+    },
+    {
+      "say": "You get three piles and draft replies for the urgent ones.",
+      "card": "3 PILES + DRAFTS",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Reply today",
+          "This week",
+          "Ignore"
+        ],
+        "active": 1
+      }
+    },
+    {
+      "say": "Fix the drafts so they sound like you, then send.",
+      "card": "MAKE IT SOUND LIKE YOU",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Edit",
+          "Send"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

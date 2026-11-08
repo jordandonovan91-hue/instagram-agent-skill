@@ -1,0 +1,96 @@
+{
+  "id": "w46-sat-pm",
+  "title": "Turn your FAQs into a help page",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Answering the same five questions every day?",
+      "card": "SAME QUESTIONS EVERY DAY?",
+      "visual": {
+        "type": "repeat",
+        "text": "Do you do weekends?"
+      }
+    },
+    {
+      "say": "Turn them into one page and send the link.",
+      "card": "ONE PAGE. ONE LINK.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "FAQs",
+          "Web page",
+          "Link"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Here are the questions customers ask me most: [list]. Write a short FAQ page for my [type of business]. One or two sentence answers, friendly, Australian spelling. Mark anything you're unsure of with [check]."
+      }
+    },
+    {
+      "say": "List every question you got this week.",
+      "card": "LIST THIS WEEK'S QUESTIONS",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Do you do weekends?",
+          "How long does it take?",
+          "Do you need a deposit?"
+        ]
+      }
+    },
+    {
+      "say": "Fix any answer marked check.",
+      "card": "FIX ANYTHING MARKED [CHECK]",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Prices",
+          "Hours",
+          "Policies"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Put it on your site and send the link instead of typing.",
+      "card": "SEND THE LINK",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Website",
+          "Google profile",
+          "Auto reply"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

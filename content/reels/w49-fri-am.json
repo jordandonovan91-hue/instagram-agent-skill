@@ -1,0 +1,94 @@
+{
+  "id": "w49-fri-am",
+  "title": "Get the guide before the silly season",
+  "hook_formula": "#12 The Objection",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Too busy for AI before Christmas?",
+      "card": "BEFORE THE SILLY SEASON",
+      "visual": {
+        "type": "repeat",
+        "text": "I'll look at it in January."
+      }
+    },
+    {
+      "say": "That's exactly why you need it now.",
+      "card": "THAT'S WHY YOU NEED IT NOW",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Busy",
+          "AI helps"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "I'm flat out before Christmas. Here's my to-do list: [list]. Which 3 jobs can you help me with today?"
+      }
+    },
+    {
+      "say": "Ten setups. Each one is a copy and paste.",
+      "card": "10 SETUPS. COPY AND PASTE.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Replies",
+          "Quotes",
+          "Posts"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Free. One email. No course.",
+      "card": "FREE. ONE EMAIL.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Free",
+          "No course"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Grab the free guide, link in my bio or my story.",
+      "card": "FREE GUIDE: LINK IN BIO",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Free guide",
+          "Link in bio"
+        ],
+        "active": 0
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "w46-tue-pm",
+  "title": "Turn messy notes into a clean email",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Your job notes look like this?",
+      "card": "YOUR NOTES ARE A MESS?",
+      "visual": {
+        "type": "repeat",
+        "text": "frnt door - swap hinges, mon??"
+      }
+    },
+    {
+      "say": "AI can turn them into a clean email in seconds.",
+      "card": "MESSY NOTES IN. CLEAN EMAIL OUT.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Notes",
+          "Email"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Turn these rough notes into a clear, friendly email to my customer. Keep my wording where you can, use dot points for the work, and finish with the next step: [paste notes]"
+      }
+    },
+    {
+      "say": "Paste your notes exactly as they are. Typos and all.",
+      "card": "TYPOS ARE FINE",
+      "visual": {
+        "type": "repeat",
+        "text": "tues 2pm ok? bring tiles x4"
+      }
+    },
+    {
+      "say": "You get a tidy email with the work in dot points.",
+      "card": "TIDY EMAIL, DOT POINTS",
+      "visual": {
+        "type": "chat",
+        "label": "Your AI chat",
+        "lines": [
+          "Hi Sam,",
+          "- Swap front door hinges",
+          "- Tuesday 2pm"
+        ]
+      }
+    },
+    {
+      "say": "Check the dates and prices before you hit send.",
+      "card": "CHECK DATES + PRICES",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Dates",
+          "Prices",
+          "Names"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

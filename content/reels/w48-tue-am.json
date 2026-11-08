@@ -1,0 +1,96 @@
+{
+  "id": "w48-tue-am",
+  "title": "Ask AI for checklists, not ideas",
+  "hook_formula": "#20 Permission",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Stop asking AI for ideas.",
+      "card": "STOP ASKING FOR IDEAS",
+      "visual": {
+        "type": "repeat",
+        "text": "Give me 10 ideas for..."
+      }
+    },
+    {
+      "say": "Ask it for a checklist instead.",
+      "card": "ASK FOR A CHECKLIST",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Onboarding",
+          "Job prep",
+          "Handover"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Make me a step-by-step checklist for [job, like onboarding a new customer]. Max 10 steps, in order, one line each, with who does it."
+      }
+    },
+    {
+      "say": "Ideas make more work. Checklists finish it.",
+      "card": "CHECKLISTS FINISH WORK",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Ideas = more work",
+          "Checklist = done"
+        ],
+        "active": 1
+      }
+    },
+    {
+      "say": "Use it for new customers, job prep, or handing over to staff.",
+      "card": "USE IT FOR",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "New customer",
+          "Job prep",
+          "Staff handover"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Print it, tick it, never forget a step again.",
+      "card": "PRINT IT. TICK IT.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Step 1",
+          "Step 2",
+          "Step 3"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

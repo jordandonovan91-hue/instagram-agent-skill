@@ -1,0 +1,94 @@
+{
+  "id": "w48-tue-pm",
+  "title": "Write a job ad in 2 minutes",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Need to hire and staring at a blank job ad?",
+      "card": "HIRING AND STUCK?",
+      "visual": {
+        "type": "repeat",
+        "text": "We are seeking a..."
+      }
+    },
+    {
+      "say": "Write it in two minutes.",
+      "card": "JOB AD IN 2 MINUTES",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Role",
+          "Hours",
+          "Pay"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write a short, friendly job ad for a [role] at my [type of business] in [suburb]. Hours: [hours]. Pay: [pay or award]. What the day looks like, who'd love it, how to apply. Under 150 words, no buzzwords."
+      }
+    },
+    {
+      "say": "Tell it the hours, the pay and what a normal day looks like.",
+      "card": "HOURS. PAY. A NORMAL DAY.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Hours",
+          "Pay",
+          "The day"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Ask who'd love this job. That's what people read.",
+      "card": "WHO'D LOVE IT",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "You like being on the tools",
+          "You hate sitting still"
+        ]
+      }
+    },
+    {
+      "say": "Check the pay meets the award before you post.",
+      "card": "CHECK THE AWARD",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Fair Work",
+          "Pay guide"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

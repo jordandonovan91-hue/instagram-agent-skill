@@ -1,0 +1,96 @@
+{
+  "id": "w47-tue-pm",
+  "title": "3 mistakes owners make with AI",
+  "hook_formula": "#14 The Mistake",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Three mistakes I see owners make with AI.",
+      "card": "3 AI MISTAKES",
+      "visual": {
+        "type": "repeat",
+        "text": "Why is this so generic?"
+      }
+    },
+    {
+      "say": "Number three costs real money.",
+      "card": "#3 COSTS MONEY",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "1",
+          "2",
+          "3"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Before you write anything, ask me 3 questions about my business and my customer."
+      }
+    },
+    {
+      "say": "One. Not telling it about your business. You get generic mush.",
+      "card": "1. NO CONTEXT",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Business",
+          "Customer",
+          "Tone"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Two. Taking the first answer. Ask it to make it shorter and more like you.",
+      "card": "2. FIRST DRAFT ONLY",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Shorter",
+          "More casual",
+          "Sound like me"
+        ]
+      }
+    },
+    {
+      "say": "Three. Not checking numbers. AI gets prices and dates wrong.",
+      "card": "3. NOT CHECKING NUMBERS",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Prices",
+          "Dates",
+          "Laws"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "w49-fri-pm",
+  "title": "End-of-year thank you to customers",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Want customers to remember you in January?",
+      "card": "SAY THANKS THIS YEAR",
+      "visual": {
+        "type": "repeat",
+        "text": "Thanks for a great year"
+      }
+    },
+    {
+      "say": "Send one honest thank you.",
+      "card": "ONE HONEST THANK YOU",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Email",
+          "Text",
+          "Post"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write a short end-of-year thank you to my customers from my [type of business]. Mention one real highlight: [highlight]. Say when we're closed and back. Warm, not cheesy, under 80 words."
+      }
+    },
+    {
+      "say": "Mention one real thing from your year.",
+      "card": "ONE REAL HIGHLIGHT",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Our 500th job",
+          "New van",
+          "Best year yet"
+        ]
+      }
+    },
+    {
+      "say": "Add your closing and reopening dates.",
+      "card": "CLOSED + BACK DATES",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Closed",
+          "Back"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Send it as an email, a text, or a post.",
+      "card": "EMAIL, TEXT OR POST",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Email",
+          "Text",
+          "Post"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "w46-mon-pm",
+  "title": "After-hours auto reply",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Missing calls after five?",
+      "card": "MISSED CALLS AFTER 5PM?",
+      "visual": {
+        "type": "repeat",
+        "text": "Sorry, missed your call..."
+      }
+    },
+    {
+      "say": "Set up one reply that works while you're off.",
+      "card": "ONE REPLY. WORKS WHILE YOU'RE OFF.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "After 5pm",
+          "Weekends",
+          "On a job"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write a friendly after-hours text reply for my [type of business]. Say when I'll call back, give my booking link [link], and ask them to reply with their job and suburb. Under 50 words."
+      }
+    },
+    {
+      "say": "Ask for their job and suburb,",
+      "card": "ASK FOR JOB + SUBURB",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Leaking tap, Joondalup",
+          "Quote for a fence?",
+          "Can you do Saturday?"
+        ]
+      }
+    },
+    {
+      "say": "so you can quote before you even ring back.",
+      "card": "QUOTE BEFORE YOU RING",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Job",
+          "Suburb",
+          "Callback time"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Put it in your phone's auto reply or your booking app.",
+      "card": "PUT IT IN YOUR AUTO REPLY",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Phone settings",
+          "Booking app",
+          "Google profile"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

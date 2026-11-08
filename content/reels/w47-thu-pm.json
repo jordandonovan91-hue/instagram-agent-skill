@@ -1,0 +1,94 @@
+{
+  "id": "w47-thu-pm",
+  "title": "Thank-you texts after a job",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Finish a job and forget to follow up?",
+      "card": "FORGET TO SAY THANKS?",
+      "visual": {
+        "type": "repeat",
+        "text": "Job done. Next."
+      }
+    },
+    {
+      "say": "A thank-you text gets you repeat work and reviews.",
+      "card": "THANKS = REPEAT WORK",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Thanks",
+          "Review",
+          "Rebook"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write 3 short thank-you texts I can send after finishing a job for my [type of business]. Each one thanks them, mentions the job: [job], and gently asks for a Google review at [link]. Under 40 words each."
+      }
+    },
+    {
+      "say": "Get three versions so it never sounds copied.",
+      "card": "3 VERSIONS",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Version 1",
+          "Version 2",
+          "Version 3"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Mention the actual job. That's what makes it feel real.",
+      "card": "MENTION THE JOB",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Thanks for having us fix the deck!"
+        ]
+      }
+    },
+    {
+      "say": "Save them in your phone and send before you drive off.",
+      "card": "SEND BEFORE YOU DRIVE OFF",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Notes app",
+          "Text",
+          "Done"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "w49-mon-pm",
+  "title": "Meeting notes you'll actually read",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Pages of meeting notes you never read again?",
+      "card": "NOTES YOU NEVER READ?",
+      "visual": {
+        "type": "repeat",
+        "text": "notes notes notes..."
+      }
+    },
+    {
+      "say": "Turn them into three lines.",
+      "card": "3 LINES. THAT'S IT.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Decided",
+          "To do",
+          "Who"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Turn these meeting notes into 3 parts: what we decided, what needs doing, and who's doing it by when. Max 8 lines: [paste notes]"
+      }
+    },
+    {
+      "say": "Decided. To do. Who and when.",
+      "card": "DECIDED. TO DO. WHO.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Decided",
+          "To do",
+          "Who + when"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Send it to everyone straight after.",
+      "card": "SEND IT STRAIGHT AFTER",
+      "visual": {
+        "type": "chat",
+        "label": "Team chat",
+        "lines": [
+          "Decided: new roster",
+          "To do: Sam calls supplier Fri"
+        ]
+      }
+    },
+    {
+      "say": "Now nobody can say they didn't know.",
+      "card": "NOBODY 'DIDN'T KNOW'",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Clear",
+          "Shared"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

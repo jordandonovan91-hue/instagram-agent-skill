@@ -1,0 +1,95 @@
+{
+  "id": "w48-fri-pm",
+  "title": "Chase unpaid invoices politely",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Invoice still unpaid and you hate chasing?",
+      "card": "INVOICE STILL UNPAID?",
+      "visual": {
+        "type": "repeat",
+        "text": "Just checking in..."
+      }
+    },
+    {
+      "say": "Let AI write the awkward bit.",
+      "card": "AI WRITES THE AWKWARD BIT",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Day 1",
+          "Day 7",
+          "Day 14"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write 3 polite payment reminders for invoice [number] for [amount], due [date]: a friendly nudge, a firmer one at 7 days, and a final one at 14 days. Under 60 words each, include how to pay: [details]."
+      }
+    },
+    {
+      "say": "Three reminders. Friendly, firmer, final.",
+      "card": "FRIENDLY. FIRMER. FINAL.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Day 1",
+          "Day 7",
+          "Day 14"
+        ],
+        "active": 0
+      }
+    },
+    {
+      "say": "Always say exactly how to pay.",
+      "card": "SAY HOW TO PAY",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "BSB / account",
+          "Pay link",
+          "Card over the phone"
+        ]
+      }
+    },
+    {
+      "say": "Save them once, use them every month.",
+      "card": "SAVE ONCE. USE MONTHLY.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Notes app",
+          "Invoice app"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

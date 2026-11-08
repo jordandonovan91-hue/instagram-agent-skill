@@ -1,0 +1,96 @@
+{
+  "id": "w47-mon-pm",
+  "title": "A price rise letter that keeps customers",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Putting your prices up and dreading telling people?",
+      "card": "DREADING A PRICE RISE?",
+      "visual": {
+        "type": "repeat",
+        "text": "How do I say this..."
+      }
+    },
+    {
+      "say": "AI can write it kindly in a minute.",
+      "card": "KIND. CLEAR. ONE MINUTE.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Notice",
+          "Reason",
+          "Thanks"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write a short, warm letter telling my regular customers that my prices go up by [amount or %] from [date]. Give one honest reason: [reason]. Thank them, no grovelling, under 120 words."
+      }
+    },
+    {
+      "say": "Give one honest reason. Just one.",
+      "card": "ONE HONEST REASON",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Materials went up",
+          "Insurance went up",
+          "More time per job"
+        ]
+      }
+    },
+    {
+      "say": "Give people notice. A month is good.",
+      "card": "GIVE NOTICE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Date",
+          "New price",
+          "Thank you"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Don't apologise three times. Once is plenty.",
+      "card": "NO GROVELLING",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Warm",
+          "Short",
+          "Clear"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

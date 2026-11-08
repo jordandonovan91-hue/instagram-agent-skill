@@ -1,0 +1,90 @@
+{
+  "id": "w49-mon-am",
+  "title": "One call into notes, a quote and a follow-up",
+  "hook_formula": "#10 If This, Then Watch",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "If you finish a customer call and forget half of it,",
+      "card": "ONE CALL. THREE JOBS DONE.",
+      "visual": {
+        "type": "repeat",
+        "text": "What did they say again?"
+      }
+    },
+    {
+      "say": "do this in the car straight after.",
+      "card": "DO THIS IN THE CAR",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Voice memo",
+          "2 min"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Here's a voice memo transcript of my call with a customer: [paste]. Give me 1) short notes, 2) a draft quote with [check] next to anything unclear, 3) a follow-up text. Leave out their phone and address."
+      }
+    },
+    {
+      "say": "Record a quick voice memo of what they said.",
+      "card": "RECORD A VOICE MEMO",
+      "visual": {
+        "type": "repeat",
+        "text": "Kitchen tap, Tuesday, about 2 hours..."
+      }
+    },
+    {
+      "say": "You get notes, a draft quote and a follow-up text.",
+      "card": "NOTES. QUOTE. FOLLOW-UP.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Notes",
+          "Quote",
+          "Follow-up"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Check the numbers, then send.",
+      "card": "CHECK, THEN SEND",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Prices",
+          "Dates"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

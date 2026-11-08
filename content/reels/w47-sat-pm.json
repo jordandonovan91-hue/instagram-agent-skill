@@ -1,0 +1,94 @@
+{
+  "id": "w47-sat-pm",
+  "title": "Product descriptions in minutes",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Fifty products and no descriptions?",
+      "card": "STUCK ON PRODUCT DESCRIPTIONS?",
+      "visual": {
+        "type": "repeat",
+        "text": "Description coming soon"
+      }
+    },
+    {
+      "say": "Do them in batches of ten.",
+      "card": "BATCHES OF 10",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "10",
+          "10",
+          "10"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write a product description for each item below, for my [type of shop]. 2 sentences each: what it is, and who it's for. Plain English, no hype words. Items: [name, size, material for each]"
+      }
+    },
+    {
+      "say": "Give it the facts: name, size, material.",
+      "card": "FACTS ONLY",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Name",
+          "Size",
+          "Material"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "What it is, and who it's for. Two sentences.",
+      "card": "WHAT + WHO FOR",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "A 1L steel bottle for tradies on site."
+        ]
+      }
+    },
+    {
+      "say": "Check every fact before it goes live.",
+      "card": "CHECK THE FACTS",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Sizes",
+          "Materials",
+          "Claims"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

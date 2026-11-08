@@ -1,0 +1,94 @@
+{
+  "id": "w46-fri-pm",
+  "title": "Chase a supplier who won't reply",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Supplier ghosting you?",
+      "card": "SUPPLIER GHOSTING YOU?",
+      "visual": {
+        "type": "repeat",
+        "text": "Just following up again..."
+      }
+    },
+    {
+      "say": "Send one email they can answer in ten seconds.",
+      "card": "ANSWERABLE IN 10 SECONDS",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Short",
+          "Clear",
+          "One question"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write a short, polite follow-up email to my supplier about [order or issue]. Ask one clear yes or no question, give the date I need it by, and keep it under 60 words."
+      }
+    },
+    {
+      "say": "One question. Yes or no.",
+      "card": "ONE YES/NO QUESTION",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Can you deliver by Friday?",
+          "Yes or no is fine"
+        ]
+      }
+    },
+    {
+      "say": "Give them the date you need it by.",
+      "card": "GIVE THE DATE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Order #",
+          "Need by",
+          "Yes / No"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Short emails get answered first.",
+      "card": "SHORT GETS ANSWERED",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Under 60 words",
+          "One ask"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

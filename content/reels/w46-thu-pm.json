@@ -1,0 +1,97 @@
+{
+  "id": "w46-thu-pm",
+  "title": "Write your Google Business description",
+  "hook_formula": "#3 The Fix",
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Is your Google Business description still blank?",
+      "card": "YOUR GOOGLE PROFILE IS BLANK?",
+      "visual": {
+        "type": "repeat",
+        "text": "Add a description..."
+      }
+    },
+    {
+      "say": "It's the first thing locals read. Fix it in five minutes.",
+      "card": "FIX IT IN 5 MINUTES",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Google",
+          "5 min",
+          "Free"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open ChatGPT, Claude or Gemini. Free is fine.",
+      "card": "ANY AI CHAT, FREE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "ChatGPT",
+          "Claude",
+          "Gemini"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Paste this.",
+      "card": "PASTE THIS",
+      "visual": {
+        "type": "prompt",
+        "text": "Write a Google Business Profile description for my [type of business] in [suburb or city]. Say who we help, our 3 main services, and what makes us different: [one line]. Plain English, under 700 characters, no hype."
+      }
+    },
+    {
+      "say": "Tell it your suburb and your three main jobs.",
+      "card": "SUBURB + 3 MAIN JOBS",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Suburb",
+          "Service 1",
+          "Service 2",
+          "Service 3"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Add the one thing customers always say about you.",
+      "card": "WHAT CUSTOMERS SAY",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Always on time",
+          "Cleans up after",
+          "Easy to deal with"
+        ]
+      }
+    },
+    {
+      "say": "Paste it into your profile and hit save.",
+      "card": "PASTE IT. SAVE.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Google Business",
+          "Edit profile",
+          "Description"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Save this for later.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}
