@@ -351,6 +351,14 @@ templates/voice.md                 your voice profile. Fill this in first.
 templates/queue.json               an example posting queue
 ```
 
+## The YouTube pack (added)
+
+Eleven `/yt-` skills from [Jakeschincariol/youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill)
+(MIT, commit a2feb21) live next to the Instagram ones in `skills/yt-*` and are linked in
+`.claude/skills/`: yt-script, yt-package, yt-seo, yt-chapters, yt-edit, yt-retention, yt-shorts,
+yt-comment, yt-plan, yt-audit, yt-viral. They read `~/.claude/youtube/voice.md`; start from
+`templates/youtube-voice.md`. Nothing in them publishes; they write and you upload.
+
 ## Credit
 
 Made by Jake Schincariol, [opusjake.ai](https://opusjake.ai).
