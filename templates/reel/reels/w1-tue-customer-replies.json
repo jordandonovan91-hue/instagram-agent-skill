@@ -1,0 +1,117 @@
+{
+  "id": "w1-tue-customer-replies",
+  "title": "Stop retyping customer replies",
+  "hook_formula": "#2 Negative Command",
+  "hook_score": 80.2,
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "Stop retyping customer replies. Save them once.",
+      "card": "STOP RETYPING REPLIES",
+      "visual": {
+        "type": "repeat",
+        "text": "Hi! Yes, we're open 9 to 5."
+      }
+    },
+    {
+      "say": "Your customers ask the same ten questions on repeat.",
+      "card": "SAME 10 QUESTIONS",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "Are you open Sunday?",
+          "Do you deliver?",
+          "How much is it?",
+          "Are you open Sunday?",
+          "Can I book online?",
+          "Do you deliver?"
+        ]
+      }
+    },
+    {
+      "say": "Open any AI chat, like ChatGPT or Claude.",
+      "card": "OPEN ANY AI CHAT",
+      "visual": {
+        "type": "chat",
+        "label": "ChatGPT  \u00b7  Claude  \u00b7  Gemini",
+        "lines": []
+      }
+    },
+    {
+      "say": "Paste in your ten most common questions.",
+      "card": "PASTE YOUR 10 QUESTIONS",
+      "visual": {
+        "type": "chat",
+        "label": "Your AI chat",
+        "lines": [
+          "1. Are you open Sunday?",
+          "2. Do you deliver?",
+          "3. How much is a consult?",
+          "4. Can I book online?",
+          "..."
+        ]
+      }
+    },
+    {
+      "say": "Add how you'd normally answer. Messy is fine.",
+      "card": "ADD YOUR ANSWERS",
+      "visual": {
+        "type": "chat",
+        "label": "Your AI chat",
+        "lines": [
+          "1. open sun? -> no, closed sundays",
+          "2. deliver? -> yes within 5 mi",
+          "3. consult -> $40, free if u buy",
+          "4. book -> link on site"
+        ]
+      }
+    },
+    {
+      "say": "Ask for a short, friendly reply to each.",
+      "card": "SHORT + FRIENDLY",
+      "visual": {
+        "type": "prompt",
+        "text": "Write a short, friendly reply to each question."
+      }
+    },
+    {
+      "say": "Tell it to match your tone.",
+      "card": "IN YOUR TONE",
+      "visual": {
+        "type": "prompt",
+        "text": "Match my tone: warm, casual, no jargon."
+      }
+    },
+    {
+      "say": "Save them as Gmail templates or text shortcuts.",
+      "card": "SAVE AS TEMPLATES",
+      "visual": {
+        "type": "cards",
+        "items": [
+          "Sunday hours",
+          "Delivery",
+          "Consult price",
+          "Booking link"
+        ],
+        "target": "Templates"
+      }
+    },
+    {
+      "say": "Next time, it's two taps instead of a blank screen.",
+      "card": "2 TAPS. DONE.",
+      "visual": {
+        "type": "shortcut",
+        "trigger": ";hours",
+        "text": "Closed Sundays! Open 9 to 5, Monday to Saturday."
+      }
+    },
+    {
+      "say": "Save this, and stop retyping the same reply.",
+      "card": "SAVE THIS",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

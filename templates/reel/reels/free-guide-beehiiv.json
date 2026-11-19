@@ -1,0 +1,106 @@
+{
+  "id": "free-guide-beehiiv",
+  "title": "Give away a free guide for $0",
+  "hook_formula": "#20 Permission",
+  "hook_score": 81.4,
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "You don't need a website. You need one free welcome email.",
+      "card": "NO WEBSITE NEEDED",
+      "visual": {
+        "type": "repeat",
+        "text": "Build a website first..."
+      }
+    },
+    {
+      "say": "Here's how to do it from your bio, for zero dollars.",
+      "card": "FREE GUIDE. $0.",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Guide",
+          "Email",
+          "Bio link"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Open a free beehiiv account. It covers up to 2,500 subscribers.",
+      "card": "1. FREE BEEHIIV ACCOUNT",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Free plan",
+          "2,500 subs",
+          "$0"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Write your guide with any AI chat. Ten setups your audience can copy.",
+      "card": "2. WRITE IT WITH AI",
+      "visual": {
+        "type": "prompt",
+        "text": "Write 10 copy-paste setups my followers can use today."
+      }
+    },
+    {
+      "say": "Paste it into the welcome email. Settings, Emails, Welcome email.",
+      "card": "3. PASTE IT IN",
+      "visual": {
+        "type": "cards",
+        "items": [
+          "Settings",
+          "Emails",
+          "Welcome email"
+        ],
+        "target": "Welcome email"
+      }
+    },
+    {
+      "say": "Switch it on. Every new signup gets the guide straight away.",
+      "card": "4. SWITCH IT ON",
+      "visual": {
+        "type": "shortcut",
+        "trigger": "New signup",
+        "text": "Here's your free guide!"
+      }
+    },
+    {
+      "say": "Then add your beehiiv link to your Instagram bio.",
+      "card": "5. LINK IN BIO",
+      "visual": {
+        "type": "chat",
+        "label": "Edit profile  ·  Links",
+        "lines": [
+          "Title: Free guide",
+          "URL: yourname.beehiiv.com"
+        ]
+      }
+    },
+    {
+      "say": "Now every view has a way to become a subscriber.",
+      "card": "VIEWS TO SUBSCRIBERS",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "New subscriber",
+          "New subscriber",
+          "New subscriber",
+          "New subscriber"
+        ]
+      }
+    },
+    {
+      "say": "Want to see mine? The free guide is in my bio.",
+      "card": "GUIDE IN BIO",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

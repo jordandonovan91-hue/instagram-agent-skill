@@ -1,0 +1,117 @@
+{
+  "id": "w1-mon-you-need-three",
+  "title": "You don't need fifty AI tools",
+  "hook_formula": "#14 The Callout",
+  "hook_score": 80.8,
+  "wpm": 165,
+  "beats": [
+    {
+      "say": "You need three AI tools. Not fifty.",
+      "card": "SMALL BIZ? YOU NEED 3",
+      "visual": {
+        "type": "bubbles",
+        "items": [
+          "New AI app!",
+          "50 AI tools",
+          "AI app #37",
+          "Try this one",
+          "Another AI tool"
+        ]
+      }
+    },
+    {
+      "say": "One to write emails, posts and quotes, like ChatGPT or Claude.",
+      "card": "1. WRITE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Write",
+          "Notes",
+          "Automate"
+        ],
+        "active": 0
+      }
+    },
+    {
+      "say": "One for meeting notes, like Otter or Fireflies.",
+      "card": "2. NOTES",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Write",
+          "Notes",
+          "Automate"
+        ],
+        "active": 1
+      }
+    },
+    {
+      "say": "And one to automate repeat tasks, like Zapier.",
+      "card": "3. AUTOMATE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Write",
+          "Notes",
+          "Automate"
+        ],
+        "active": 2
+      }
+    },
+    {
+      "say": "That's it. Everything else is noise.",
+      "card": "THE REST IS NOISE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "Write",
+          "Notes",
+          "Automate"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Every week, I break down one tool in plain English.",
+      "card": "1 TOOL A WEEK",
+      "visual": {
+        "type": "prompt",
+        "text": "This week: one tool, in plain English."
+      }
+    },
+    {
+      "say": "What it does, what it costs, and who it's for.",
+      "card": "DOES. COSTS. FOR WHO.",
+      "visual": {
+        "type": "cards",
+        "items": [
+          "What it does",
+          "What it costs",
+          "Who it's for"
+        ],
+        "target": "Under 1 min"
+      }
+    },
+    {
+      "say": "No jargon, no hype, and under a minute.",
+      "card": "NO HYPE",
+      "visual": {
+        "type": "tiles",
+        "items": [
+          "No jargon",
+          "No hype",
+          "Under 60 sec"
+        ],
+        "active": "all"
+      }
+    },
+    {
+      "say": "Follow for the next one. You only need three.",
+      "card": "FOLLOW FOR MORE",
+      "visual": {
+        "type": "cta",
+        "text": "@small_bizaitools"
+      }
+    }
+  ]
+}

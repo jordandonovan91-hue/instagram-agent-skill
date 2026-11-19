@@ -1,0 +1,11 @@
+{
+  "name": "reel-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 build.py",
+    "dev": "npx --yes hyperframes@0.9.6 preview",
+    "check": "npx --yes hyperframes@0.9.6 check",
+    "render": "npx --yes hyperframes@0.9.6 render"
+  }
+}
